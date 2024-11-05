@@ -1,0 +1,16 @@
+led:
+  log_file_name: "LED_mixed_log.log"
+  login_token: "hf_JedKYsLBZqHzmapMEjLpAboxJepFJKCvU"
+  dataset_name: "ahmed275/mixed_dataset_temporal"
+  tokenizer: "LEDTokener.from_pretrained('allenai/led-base-16384')"
+  model: "LEDForConditionalGeneration.from_pretrained('allenai/led-base-16384')"
+  pretrained_model_save_path: "led-base-16384/model"
+  repo_id: "ahmed275/SS-LED_mixed"
+
+generate_summary:
+  log_file_name: "generated_summary.log"
+  login_token: "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"
+  dataset_name: "ahmed275/opinions_dataset_temporal"
+  model: "AutoModelForSeq2SeqLM.from_pretrained('ahmed275/SS-LED_mixed_liberal_75')"
+  tokenizer: "AutoTokenizer.from_pretrained('ahmed275/SS-LED_mixed_liberal_75')"
+  push_dataset_name: "ahmed275/opinions_dataset_temporal_test_generated_summaries_mixed_liberal_75"
