@@ -4,7 +4,7 @@ import logging
 import pandas as pd
 import torch
 from datasets import load_dataset, Dataset
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer , LongT5ForConditionalGeneration
 from huggingface_hub import login
 
 # Parse command-line arguments
