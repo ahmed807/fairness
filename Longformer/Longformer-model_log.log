@@ -1,0 +1,93 @@
+2024-10-20 21:49:57,109 - INFO - Device: cuda:3
+2024-10-20 21:50:26,570 - ERROR - Error during training: expected sequence of length 242 at dim 1 (got 182)
+2024-10-20 21:50:26,581 - ERROR - Error during evaluation: expected sequence of length 1651 at dim 1 (got 1817)
+2024-10-20 22:00:41,374 - INFO - Device: cuda:3
+2024-10-20 22:01:11,359 - INFO - Device: cuda:3
+2024-10-20 22:01:16,063 - ERROR - Error during training: expected sequence of length 242 at dim 1 (got 182)
+2024-10-20 22:01:16,074 - ERROR - Error during evaluation: expected sequence of length 1651 at dim 1 (got 1817)
+2024-10-20 22:03:47,325 - INFO - Device: cuda:3
+2024-10-20 22:36:35,833 - ERROR - Error during training: Caught RuntimeError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/torch/nn/parallel/parallel_apply.py", line 83, in _worker
+    output = module(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/transformers/models/longformer/modeling_longformer.py", line 1916, in forward
+    outputs = self.longformer(
+              ^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/transformers/models/longformer/modeling_longformer.py", line 1729, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/transformers/models/longformer/modeling_longformer.py", line 1309, in forward
+    layer_outputs = layer_module(
+                    ^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/transformers/models/longformer/modeling_longformer.py", line 1237, in forward
+    self_attn_outputs = self.attention(
+                        ^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/transformers/models/longformer/modeling_longformer.py", line 1173, in forward
+    self_outputs = self.self(
+                   ^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/transformers/models/longformer/modeling_longformer.py", line 599, in forward
+    ) = self._get_global_attn_indices(is_index_global_attn)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/transformers/models/longformer/modeling_longformer.py", line 929, in _get_global_attn_indices
+    is_index_global_attn_nonzero = is_index_global_attn.nonzero(as_tuple=True)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+
+2024-10-20 22:36:35,857 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-21 01:02:39,428 - INFO - Device: cuda:3
+2024-10-22 04:05:58,941 - INFO - Device: cuda:2
+2024-10-22 04:57:20,982 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-22 04:57:20,999 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

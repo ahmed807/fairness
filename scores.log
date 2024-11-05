@@ -1,0 +1,18 @@
+2024-10-20 21:11:24,211 - INFO - Loading dataset from Hugging Face...
+2024-10-20 21:11:59,779 - INFO - Loading dataset from Hugging Face...
+2024-10-20 21:14:11,257 - INFO - Device: cuda:3
+2024-10-20 21:14:11,257 - INFO - Loading dataset from Hugging Face...
+2024-10-20 21:14:13,786 - INFO - Dataset loaded and converted to DataFrame.
+2024-10-20 21:14:13,796 - INFO - Using default tokenizer.
+2024-10-20 21:14:13,796 - INFO - Initialized ROUGE scorer.
+2024-10-20 21:14:16,114 - INFO - Initialized BERT scorer.
+2024-10-24 16:20:07,835 - INFO - Loading dataset from Hugging Face...
+2024-10-24 16:20:10,219 - INFO - Dataset loaded and converted to DataFrame.
+2024-10-24 16:20:10,219 - INFO - Using default tokenizer.
+2024-10-24 16:20:10,219 - INFO - Initialized ROUGE scorer.
+2024-10-24 16:20:11,809 - INFO - Initialized BERT scorer.
+2024-10-24 16:20:30,839 - INFO - Loading dataset from Hugging Face...
+2024-10-24 16:20:32,936 - INFO - Dataset loaded and converted to DataFrame.
+2024-10-24 16:20:32,937 - INFO - Using default tokenizer.
+2024-10-24 16:20:32,937 - INFO - Initialized ROUGE scorer.
+2024-10-24 16:20:34,431 - INFO - Initialized BERT scorer.

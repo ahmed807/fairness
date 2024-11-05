@@ -1,0 +1,10 @@
+2024-10-24 14:08:37,048 - INFO - Tokenizing datasets
+2024-10-24 14:08:39,284 - INFO - Starting training
+2024-10-24 14:09:58,987 - INFO - Tokenizing datasets
+2024-10-24 14:10:01,264 - INFO - Starting training
+2024-10-24 14:33:38,255 - INFO - Tokenizing datasets
+2024-10-24 14:33:40,632 - INFO - Starting training
+2024-10-24 16:05:31,210 - INFO - Tokenizing datasets
+2024-10-24 16:05:34,625 - INFO - Starting training
+2024-10-25 00:53:47,143 - INFO - Evaluating the model
+2024-10-25 00:55:32,560 - INFO - Evaluation results: {'eval_loss': 2.0323143005371094, 'eval_runtime': 105.4158, 'eval_samples_per_second': 2.742, 'eval_steps_per_second': 2.742, 'epoch': 10.0}

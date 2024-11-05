@@ -1,0 +1,10 @@
+pandas
+datasets
+transformers
+scikit-learn
+huggingface-hub
+torch
+matplotlib
+numpy
+
+# sudo apt-get install python3-dev

@@ -1,0 +1,18 @@
+2024-10-13 15:14:53,813 - INFO - Device: cuda:0
+2024-10-13 15:14:53,813 - INFO - Loading dataset from Hugging Face...
+2024-10-13 15:14:56,259 - INFO - Dataset loaded and converted to DataFrame.
+2024-10-13 15:14:56,259 - INFO - Using default tokenizer.
+2024-10-13 15:14:56,259 - INFO - Initialized ROUGE scorer.
+2024-10-13 18:57:47,162 - INFO - Loading dataset from Hugging Face...
+2024-10-13 18:57:50,363 - INFO - Dataset loaded and converted to DataFrame with optimized data types.
+2024-10-13 18:57:50,363 - INFO - Using default tokenizer.
+2024-10-13 18:57:50,363 - INFO - Initialized ROUGE scorer.
+2024-10-13 18:58:58,071 - INFO - Loading dataset from Hugging Face...
+2024-10-13 18:59:01,004 - INFO - Dataset loaded and converted to DataFrame.
+2024-10-13 18:59:01,004 - INFO - Using default tokenizer.
+2024-10-13 18:59:01,004 - INFO - Initialized ROUGE scorer.
+
+
+
+
+

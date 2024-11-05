@@ -1,0 +1,25 @@
+2024-10-29 10:12:52,731 - INFO - Loading dataset from Hugging Face...
+2024-10-29 10:12:55,090 - INFO - Dataset loaded and converted to DataFrame.
+2024-10-29 10:12:55,091 - INFO - Using default tokenizer.
+2024-10-29 10:13:05,692 - INFO - Initialized all scorers.
+2024-10-30 22:08:36,758 - INFO - Loading dataset from Hugging Face...
+2024-10-30 22:08:41,750 - INFO - Dataset loaded and converted to DataFrame.
+2024-10-30 22:08:41,750 - INFO - Using default tokenizer.
+2024-10-30 22:08:53,916 - INFO - Initialized all scorers.
+2024-10-30 22:10:34,776 - INFO - Loading dataset from Hugging Face...
+2024-10-30 22:10:39,086 - INFO - Dataset loaded and converted to DataFrame.
+2024-10-30 22:10:39,086 - INFO - Using default tokenizer.
+2024-10-30 22:10:49,259 - INFO - Initialized all scorers.
+2024-10-31 09:28:35,034 - INFO - Loading dataset from Hugging Face...
+2024-10-31 09:28:38,642 - INFO - Dataset loaded and converted to DataFrame.
+2024-10-31 09:28:38,643 - INFO - Using default tokenizer.
+2024-10-31 09:28:50,248 - INFO - Initialized all scorers.
+2024-10-31 17:13:15,935 - INFO - Loading dataset from Hugging Face...
+2024-10-31 17:13:20,299 - INFO - Dataset loaded and converted to DataFrame.
+2024-10-31 17:13:20,300 - INFO - Using default tokenizer.
+2024-10-31 17:13:33,157 - INFO - Initialized all scorers.
+2024-11-01 13:20:31,029 - INFO - Loading dataset from Hugging Face...
+2024-11-01 13:20:35,064 - INFO - DATASET opinions_dataset_temporal_test_generated_summaries_mixed_conservative_75 all scorers.
+2024-11-01 13:20:35,125 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-01 13:20:35,125 - INFO - Using default tokenizer.
+2024-11-01 13:20:48,521 - INFO - Initialized all scorers.

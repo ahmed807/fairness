@@ -1,0 +1,8 @@
+2024-10-31 21:47:09,970 - INFO - Tokenizing datasets
+2024-10-31 21:47:10,595 - INFO - Preprocessing 12 examples
+2024-10-31 21:47:30,974 - INFO - Preprocessing 12 examples
+2024-10-31 21:47:50,913 - INFO - Preprocessing 12 examples
+2024-10-31 21:47:55,197 - INFO - Preprocessing 12 examples
+2024-10-31 21:48:06,093 - INFO - Starting training
+2024-11-01 13:17:35,162 - INFO - Evaluating the model
+2024-11-01 13:21:07,172 - INFO - Evaluation results: {'eval_loss': 2.0038740634918213, 'eval_runtime': 211.9928, 'eval_samples_per_second': 1.231, 'eval_steps_per_second': 1.231, 'epoch': 10.0}

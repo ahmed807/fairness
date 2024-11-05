@@ -1,0 +1,251 @@
+2024-10-24 13:57:32,183 - INFO - Device: cpu
+2024-10-24 13:57:37,038 - WARNING - Parameter 'function'=<function preprocess_data at 0x7f0a6166b060> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+2024-10-24 13:59:16,432 - INFO - Device: cuda:2
+2024-10-24 14:00:28,630 - INFO - Device: cuda:2
+2024-10-24 14:01:11,463 - INFO - Device: cuda:2
+2024-10-24 14:44:50,489 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-24 14:44:50,505 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-24 16:49:11,974 - ERROR - Error during training: Trainer: evaluation requires an eval_dataset.
+2024-10-24 16:49:11,974 - ERROR - Error during evaluation: Trainer: evaluation requires an eval_dataset.
+2024-10-24 16:50:35,593 - INFO - Accuracy: 0.533821
+2024-10-24 16:50:35,593 - INFO - Precision: 0.602740
+2024-10-24 16:50:35,593 - INFO - Recall: 0.308772
+2024-10-24 16:50:35,593 - INFO - F1 Score: 0.408353
+2024-10-24 18:15:47,991 - ERROR - Error during training: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-24 18:15:48,063 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-24 19:44:42,214 - ERROR - Error during training: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-24 19:44:42,262 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:30:03,326 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:30:03,349 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:32:54,933 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:32:54,949 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:34:11,724 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:34:11,746 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:35:18,668 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:35:18,690 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:38:49,638 - ERROR - Error during training: 
+2024-10-25 18:38:49,668 - ERROR - Error during evaluation: 
+2024-10-25 18:39:57,979 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:39:57,995 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:41:11,501 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:41:11,523 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:42:34,341 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:42:34,364 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:44:29,833 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:44:29,856 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:46:52,655 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:46:52,677 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:48:42,189 - INFO - Longformer Evaluation results: {'eval_loss': 0.4980703592300415, 'eval_runtime': 1.0168, 'eval_samples_per_second': 0.983, 'eval_steps_per_second': 0.983, 'epoch': 1.0}
+2024-10-25 18:50:32,421 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:50:32,439 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 18:52:23,922 - INFO - Longformer Evaluation results: {'eval_loss': 0.6893934011459351, 'eval_runtime': 5.2019, 'eval_samples_per_second': 1.922, 'eval_steps_per_second': 1.922, 'epoch': 1.0}
+2024-10-25 19:00:01,849 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 19:00:01,865 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 19:03:53,777 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 19:03:53,796 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 19:13:55,162 - INFO - Longformer Evaluation results: {'eval_loss': 0.6662386655807495, 'eval_runtime': 5.2165, 'eval_samples_per_second': 1.917, 'eval_steps_per_second': 1.917, 'epoch': 1.0}
+2024-10-25 19:18:42,762 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 19:18:42,772 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 19:19:53,394 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 19:19:53,406 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 19:23:52,774 - ERROR - Error during training: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 19:23:52,784 - ERROR - Error during evaluation: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-25 19:34:26,696 - INFO - Longformer Evaluation results: {'eval_loss': 0.6739242076873779, 'eval_runtime': 5.167, 'eval_samples_per_second': 1.935, 'eval_steps_per_second': 1.935, 'epoch': 1.0}
+2024-10-25 19:46:38,207 - ERROR - Error during training: CUDA out of memory. Tried to allocate 578.00 MiB. GPU 
+2024-10-25 19:48:16,560 - INFO - Longformer Evaluation results: {'eval_loss': 0.6921192407608032, 'eval_runtime': 98.3486, 'eval_samples_per_second': 5.501, 'eval_steps_per_second': 0.691, 'epoch': 0}
+2024-10-25 19:53:10,984 - ERROR - Error during training: No columns in the dataset match the model's forward method signature. The following columns have been ignored: [attention_mask, labels, input_ids]. Please check the dataset and model. You may need to set `remove_unused_columns=False` in `TrainingArguments`.
+2024-10-25 19:53:10,985 - ERROR - Error during evaluation: No columns in the dataset match the model's forward method signature. The following columns have been ignored: [attention_mask, labels, input_ids]. Please check the dataset and model. You may need to set `remove_unused_columns=False` in `TrainingArguments`.
+2024-10-25 19:55:05,565 - ERROR - Error during training: No columns in the dataset match the model's forward method signature. The following columns have been ignored: [labels, attention_mask, input_ids]. Please check the dataset and model. You may need to set `remove_unused_columns=False` in `TrainingArguments`.
+2024-10-25 19:55:05,566 - ERROR - Error during evaluation: No columns in the dataset match the model's forward method signature. The following columns have been ignored: [labels, attention_mask, input_ids]. Please check the dataset and model. You may need to set `remove_unused_columns=False` in `TrainingArguments`.
+2024-10-25 20:20:12,176 - ERROR - Error during training: CUDA out of memory. Tried to allocate 290.00 MiB. GPU 
+2024-10-25 21:17:53,460 - ERROR - Error during training: Failed running call_function <built-in method bmm of type object at 0x7fa3c94817c0>(*(FakeTensor(..., device='cuda:0', size=(12*s3, 1, 64), dtype=torch.float16,
+           grad_fn=<TransposeBackward0>), FakeTensor(..., device='cuda:0', size=(12*s3, ((64*s2)//s3), 4096),
+           dtype=torch.float16, grad_fn=<TransposeBackward0>)), **{}):
+False != True
+
+from user code:
+   File "/home/mostah/anaconda3/envs/myenv/lib/python3.11/site-packages/transformers/models/longformer/modeling_longformer.py", line 1055, in torch_dynamo_resume_in__compute_global_attn_output_from_hidden_at_1043
+
+Set TORCH_LOGS="+dynamo" and TORCHDYNAMO_VERBOSE=1 for more information
+
+
+You can suppress this exception and fall back to eager by setting:
+    import torch._dynamo
+    torch._dynamo.config.suppress_errors = True
+
+2024-10-25 21:18:18,483 - ERROR - Error during evaluation: name 's7' is not defined
+2024-10-28 13:39:22,749 - ERROR - Error during training: CUDA out of memory. Tried to allocate 290.00 MiB. GPU 0 has a total capacity of 44.46 GiB of which 20.88 MiB is free. Process 3450425 has 17.21 GiB memory in use. Process 327872 has 4.42 GiB memory in use. Process 383255 has 9.65 GiB memory in use. Including non-PyTorch memory, this process has 13.13 GiB memory in use. Of the allocated memory 12.58 GiB is allocated by PyTorch, and 243.33 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2024-10-28 13:51:58,571 - INFO - Longformer Evaluation results: {'eval_runtime': 16.5835, 'eval_samples_per_second': 0.603, 'eval_steps_per_second': 0.302, 'epoch': 3.0}
+
+
+2024-10-28 14:15:34,433 - INFO - Longformer Evaluation results: {'eval_runtime': 3.9461, 'eval_samples_per_second': 2.534, 'eval_steps_per_second': 1.267, 'epoch': 2.0}
+
+
+
+2024-10-28 14:23:19,085 - INFO - Longformer Evaluation results: {'eval_runtime': 3.8911, 'eval_samples_per_second': 2.57, 'eval_steps_per_second': 1.285, 'epoch': 2.0}
+2024-10-28 14:23:22,980 - INFO - Predictions type: <class 'tuple'>
+2024-10-28 14:28:42,203 - INFO - Longformer Evaluation results: {'eval_runtime': 3.8378, 'eval_samples_per_second': 2.606, 'eval_steps_per_second': 1.303, 'epoch': 2.0}
+2024-10-28 14:28:45,889 - INFO - Predictions type: <class 'tuple'>
+2024-10-28 14:28:45,889 - INFO - Logits shape: (10, 2)
+2024-10-28 14:28:45,898 - INFO - Accuracy: 0.300000
+2024-10-28 14:28:45,899 - INFO - Precision: 0.300000
+2024-10-28 14:28:45,899 - INFO - Recall: 1.000000
+2024-10-28 14:28:45,899 - INFO - F1 Score: 0.461538
+2024-10-28 14:43:43,346 - ERROR - Error during training: Unable to create tensor, you should probably activate truncation and/or padding with 'padding=True' 'truncation=True' to have batched tensors with the same length. Perhaps your features (`id` in this case) have excessive nesting (inputs type `list` where type `int` is expected).
+2024-10-28 14:43:43,348 - ERROR - Error during evaluation: Unable to create tensor, you should probably activate truncation and/or padding with 'padding=True' 'truncation=True' to have batched tensors with the same length. Perhaps your features (`id` in this case) have excessive nesting (inputs type `list` where type `int` is expected).
+
+
+
+2024-10-28 14:48:34,527 - INFO - Longformer Evaluation results: {'eval_runtime': 3.7077, 'eval_samples_per_second': 2.697, 'eval_steps_per_second': 1.349, 'epoch': 2.0}
+2024-10-28 14:48:38,033 - INFO - Predictions type: <class 'tuple'>
+2024-10-28 14:48:38,034 - INFO - Logits shape: (10, 2)
+2024-10-28 14:48:38,036 - INFO -  True Label: 1, Predicted Label: 1
+2024-10-28 14:48:38,036 - INFO -  True Label: 0, Predicted Label: 1
+2024-10-28 14:48:38,036 - INFO -  True Label: 0, Predicted Label: 1
+2024-10-28 14:48:38,036 - INFO -  True Label: 0, Predicted Label: 1
+2024-10-28 14:48:38,036 - INFO -  True Label: 1, Predicted Label: 1
+2024-10-28 14:48:38,036 - INFO -  True Label: 0, Predicted Label: 1
+2024-10-28 14:48:38,036 - INFO -  True Label: 0, Predicted Label: 1
+2024-10-28 14:48:38,036 - INFO -  True Label: 0, Predicted Label: 1
+2024-10-28 14:48:38,036 - INFO -  True Label: 0, Predicted Label: 1
+2024-10-28 14:48:38,036 - INFO -  True Label: 1, Predicted Label: 1
+2024-10-28 14:48:38,040 - INFO - Accuracy: 0.300000
+2024-10-28 14:48:38,040 - INFO - Precision: 0.300000
+2024-10-28 14:48:38,040 - INFO - Recall: 1.000000
+2024-10-28 14:48:38,040 - INFO - F1 Score: 0.461538

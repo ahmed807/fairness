@@ -1,0 +1,260 @@
+2024-11-01 14:21:08,107 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+2024-11-01 14:22:05,116 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+2024-11-01 14:28:47,566 - INFO - Distance-Based Metric absolute_differences: 0.000000
+2024-11-01 14:28:47,567 - INFO - Distance-Based Metric: 0.000000
+2024-11-01 14:30:31,613 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+2024-11-01 14:39:06,576 - INFO - Distance-Based Metric absolute_differences: 0.000000
+2024-11-01 14:39:06,576 - INFO - Distance-Based Metric: 0.000000
+2024-11-01 14:39:06,577 - INFO - Flip Rate for Syllabus Predictions: 0.000000
+2024-11-01 14:39:06,577 - INFO - Flip Rate for Opinion Predictions: 0.000000
+2024-11-01 14:39:06,580 - INFO - Macro F1 Score for Syllabus: 0.3425480769230769
+2024-11-01 14:39:06,581 - INFO - Macro F1 Score for Opinion: 0.3425480769230769
+2024-11-01 14:46:42,181 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+2024-11-01 14:48:19,385 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+2024-11-01 14:55:38,336 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 14:55:38,336 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 14:55:38,336 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 14:55:38,336 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 14:55:38,337 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 14:55:38,337 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 14:55:38,337 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 14:55:38,337 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 14:55:38,337 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 14:55:38,337 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 15:01:35,262 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+2024-11-01 15:22:25,135 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+
+
+
+2024-11-01 15:31:55,980 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+2024-11-01 15:40:31,360 - INFO - syllabus Logits shape: (2,)
+2024-11-01 15:42:32,458 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+2024-11-01 15:51:28,986 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 15:51:28,986 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 15:51:28,986 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 15:51:28,986 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 15:51:28,986 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 15:51:28,986 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 15:51:28,986 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 15:51:28,986 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 15:51:28,986 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 15:51:28,986 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 15:51:28,991 - INFO - Syllabus Accuracy: 0.521024
+2024-11-01 15:51:28,991 - INFO - Syllabus Precision: 0.521024
+2024-11-01 15:51:28,991 - INFO - Syllabus Recall: 1.000000
+2024-11-01 15:51:28,991 - INFO - Syllabus F1 Score: 0.685096
+2024-11-01 15:51:28,996 - INFO - Opinion Accuracy: 0.521024
+2024-11-01 15:51:28,996 - INFO - Opinion Precision: 0.521024
+2024-11-01 15:51:28,996 - INFO - Opinion Recall: 1.000000
+2024-11-01 15:51:28,996 - INFO - Opinion F1 Score: 0.685096
+2024-11-01 15:51:28,996 - INFO - Distance-Based Metric absolute_differences: 0.000000
+2024-11-01 15:51:28,996 - INFO - Distance-Based Metric: 0.000000
+2024-11-01 15:51:28,996 - INFO - Flip Rate for Syllabus Predictions: 0.000000
+2024-11-01 15:51:28,996 - INFO - Flip Rate for Opinion Predictions: 0.000000
+2024-11-01 15:51:28,997 - INFO - Macro F1 Score for Syllabus: 0.3425480769230769
+2024-11-01 15:51:28,998 - INFO - Macro F1 Score for Opinion: 0.3425480769230769
+2024-11-01 16:02:20,056 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+
+
+
+2024-11-01 16:02:41,585 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:02:41,585 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:02:41,585 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:02:41,585 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:02:41,585 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:02:41,585 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:02:41,585 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:02:41,586 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:02:41,586 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:02:41,586 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:03:27,674 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+2024-11-01 16:03:54,976 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+2024-11-01 16:04:17,930 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:04:17,930 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:04:17,931 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:04:17,931 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:04:17,931 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:04:17,931 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:04:17,931 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:04:17,931 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:04:17,931 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:04:17,931 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:04:17,937 - INFO - Syllabus Accuracy: 0.250000
+2024-11-01 16:04:17,937 - INFO - Syllabus Precision: 0.250000
+2024-11-01 16:04:17,937 - INFO - Syllabus Recall: 1.000000
+2024-11-01 16:04:17,937 - INFO - Syllabus F1 Score: 0.400000
+2024-11-01 16:04:17,942 - INFO - Opinion Accuracy: 0.250000
+2024-11-01 16:04:17,942 - INFO - Opinion Precision: 0.250000
+2024-11-01 16:04:17,942 - INFO - Opinion Recall: 1.000000
+2024-11-01 16:04:17,942 - INFO - Opinion F1 Score: 0.400000
+2024-11-01 16:04:17,942 - INFO - Distance-Based Metric absolute_differences: 0.000000
+2024-11-01 16:04:17,942 - INFO - Distance-Based Metric: 0.000000
+2024-11-01 16:04:17,942 - INFO - Flip Rate for Syllabus Predictions: 0.750000
+2024-11-01 16:04:17,943 - INFO - Flip Rate for Opinion Predictions: 0.750000
+2024-11-01 16:04:17,944 - INFO - Macro F1 Score for Syllabus: 0.2
+2024-11-01 16:04:17,945 - INFO - Macro F1 Score for Opinion: 0.2
+
+
+
+
+
+2024-11-01 16:05:30,186 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+2024-11-01 16:05:51,895 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,896 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:05:51,901 - INFO - Syllabus Accuracy: 0.250000
+2024-11-01 16:05:51,901 - INFO - Syllabus Precision: 0.250000
+2024-11-01 16:05:51,901 - INFO - Syllabus Recall: 1.000000
+2024-11-01 16:05:51,901 - INFO - Syllabus F1 Score: 0.400000
+2024-11-01 16:05:51,905 - INFO - Opinion Accuracy: 0.250000
+2024-11-01 16:05:51,905 - INFO - Opinion Precision: 0.250000
+2024-11-01 16:05:51,905 - INFO - Opinion Recall: 1.000000
+2024-11-01 16:05:51,905 - INFO - Opinion F1 Score: 0.400000
+2024-11-01 16:05:51,905 - INFO - Distance-Based Metric absolute_differences: 0.000000
+2024-11-01 16:05:51,905 - INFO - Distance-Based Metric: 0.000000
+2024-11-01 16:05:51,905 - INFO - Flip Rate for Syllabus Predictions: 0.750000
+2024-11-01 16:05:51,905 - INFO - Flip Rate for Opinion Predictions: 0.750000
+2024-11-01 16:05:51,906 - INFO - Macro F1 Score for Syllabus: 0.2
+2024-11-01 16:05:51,907 - INFO - Macro F1 Score for Opinion: 0.2
+
+
+
+2024-11-01 16:07:50,347 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+2024-11-01 16:08:02,884 - INFO - Predictions for Syllabus: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2024-11-01 16:08:02,885 - INFO - Predictions for Opinion: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+2024-11-01 16:08:02,885 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:08:02,885 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:08:02,885 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:08:02,885 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:08:02,885 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:08:02,885 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:08:02,885 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:08:02,885 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:08:02,885 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:08:02,885 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:08:02,888 - INFO - Syllabus Accuracy: 0.300000
+2024-11-01 16:08:02,889 - INFO - Syllabus Precision: 0.300000
+2024-11-01 16:08:02,889 - INFO - Syllabus Recall: 1.000000
+2024-11-01 16:08:02,889 - INFO - Syllabus F1 Score: 0.461538
+2024-11-01 16:08:02,892 - INFO - Opinion Accuracy: 0.300000
+2024-11-01 16:08:02,892 - INFO - Opinion Precision: 0.300000
+2024-11-01 16:08:02,892 - INFO - Opinion Recall: 1.000000
+2024-11-01 16:08:02,892 - INFO - Opinion F1 Score: 0.461538
+2024-11-01 16:08:02,892 - INFO - Distance-Based Metric absolute_differences: 0.000000
+2024-11-01 16:08:02,892 - INFO - Distance-Based Metric: 0.000000
+2024-11-01 16:08:02,892 - INFO - Flip Rate for Syllabus Predictions: 0.700000
+2024-11-01 16:08:02,892 - INFO - Flip Rate for Opinion Predictions: 0.700000
+2024-11-01 16:08:02,893 - INFO - Macro F1 Score for Syllabus: 0.23076923076923078
+2024-11-01 16:08:02,894 - INFO - Macro F1 Score for Opinion: 0.23076923076923078
+2024-11-01 16:08:48,673 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+
+
+
+2024-11-01 16:09:01,442 - INFO - Predictions for Syllabus: [[-0.12375402,  0.13780822],
+ [-0.15864302,  0.11517794],
+ [-0.15174806,  0.08477555],
+ [-0.05755929,  0.1507673 ],
+ [-0.07995389,  0.1334943 ],
+ [-0.15877767,  0.11589827],
+ [-0.07350096,  0.15142041],
+ [-0.09233555,  0.14334294],
+ [-0.13321185,  0.15477191],
+ [-0.1484321 ,  0.06338617]]
+2024-11-01 16:09:01,442 - INFO - Predictions for Opinion: [[-0.13458356,  0.16539757],
+ [-0.10043916,  0.1413022 ],
+ [-0.1106685 ,  0.06416366],
+ [-0.09096004,  0.12158939],
+ [-0.13860045,  0.11378662],
+ [-0.15202966,  0.09156424],
+ [-0.16091943,  0.13172416],
+ [-0.1638179 ,  0.11208895],
+ [-0.14943363,  0.11212052],
+ [-0.16276619,  0.09777228]]
+2024-11-01 16:09:01,442 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:09:01,442 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:09:01,442 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:09:01,442 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:09:01,442 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:09:01,442 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:09:01,442 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:09:01,442 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:09:01,442 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:09:01,442 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:09:01,447 - INFO - Syllabus Accuracy: 0.300000
+2024-11-01 16:09:01,447 - INFO - Syllabus Precision: 0.300000
+2024-11-01 16:09:01,447 - INFO - Syllabus Recall: 1.000000
+2024-11-01 16:09:01,447 - INFO - Syllabus F1 Score: 0.461538
+2024-11-01 16:09:01,451 - INFO - Opinion Accuracy: 0.300000
+2024-11-01 16:09:01,451 - INFO - Opinion Precision: 0.300000
+2024-11-01 16:09:01,451 - INFO - Opinion Recall: 1.000000
+2024-11-01 16:09:01,451 - INFO - Opinion F1 Score: 0.461538
+2024-11-01 16:09:01,451 - INFO - Distance-Based Metric absolute_differences: 0.000000
+2024-11-01 16:09:01,451 - INFO - Distance-Based Metric: 0.000000
+2024-11-01 16:09:01,451 - INFO - Flip Rate for Syllabus Predictions: 0.700000
+2024-11-01 16:09:01,451 - INFO - Flip Rate for Opinion Predictions: 0.700000
+2024-11-01 16:09:01,452 - INFO - Macro F1 Score for Syllabus: 0.23076923076923078
+2024-11-01 16:09:01,453 - INFO - Macro F1 Score for Opinion: 0.23076923076923078
+2024-11-01 16:10:00,736 - INFO - DATASET -> opinions_dataset_temporal_test_generated_summaries
+
+
+2024-11-01 16:10:48,389 - INFO - Predictions for Syllabus: [[-1.0463605 ,  0.86160654],
+ [-1.7541504 ,  1.4156997 ],
+ [ 0.5282488 , -0.8949828 ],
+ [ 3.198758  , -3.3144662 ],
+ [ 2.5409594 , -2.7637272 ],
+ [-0.34146526,  0.16616735],
+ [-1.1852301 ,  1.2014757 ],
+ [ 2.1080348 , -2.6385686 ],
+ [ 3.1028194 , -3.6493852 ],
+ [ 1.1453005 , -1.6194907 ]]
+2024-11-01 16:10:48,389 - INFO - Predictions for Opinion: [[-2.7960658 ,  3.3056002 ],
+ [-1.2097934 ,  1.1181154 ],
+ [-2.1355276 ,  1.898241  ],
+ [ 0.72391665, -0.96659607],
+ [ 1.7541727 , -1.7358134 ],
+ [-2.4582505 ,  2.5048115 ],
+ [-0.576372  ,  0.3538992 ],
+ [-2.3408248 ,  2.6399817 ],
+ [ 2.21158   , -2.7089095 ],
+ [-1.8891065 ,  1.9056873 ]]
+2024-11-01 16:10:48,389 - INFO -  True Label: 1, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:10:48,389 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:10:48,389 - INFO -  True Label: 0, Predicted Syllabus: 0, Predicted Opinion: 1
+2024-11-01 16:10:48,389 - INFO -  True Label: 0, Predicted Syllabus: 0, Predicted Opinion: 0
+2024-11-01 16:10:48,389 - INFO -  True Label: 1, Predicted Syllabus: 0, Predicted Opinion: 0
+2024-11-01 16:10:48,389 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:10:48,389 - INFO -  True Label: 0, Predicted Syllabus: 1, Predicted Opinion: 1
+2024-11-01 16:10:48,389 - INFO -  True Label: 0, Predicted Syllabus: 0, Predicted Opinion: 1
+2024-11-01 16:10:48,389 - INFO -  True Label: 0, Predicted Syllabus: 0, Predicted Opinion: 0
+2024-11-01 16:10:48,389 - INFO -  True Label: 1, Predicted Syllabus: 0, Predicted Opinion: 1
+2024-11-01 16:10:48,394 - INFO - Syllabus Accuracy: 0.500000
+2024-11-01 16:10:48,394 - INFO - Syllabus Precision: 0.250000
+2024-11-01 16:10:48,394 - INFO - Syllabus Recall: 0.333333
+2024-11-01 16:10:48,394 - INFO - Syllabus F1 Score: 0.285714
+2024-11-01 16:10:48,397 - INFO - Opinion Accuracy: 0.400000
+2024-11-01 16:10:48,397 - INFO - Opinion Precision: 0.285714
+2024-11-01 16:10:48,397 - INFO - Opinion Recall: 0.666667
+2024-11-01 16:10:48,398 - INFO - Opinion F1 Score: 0.400000
+2024-11-01 16:10:48,398 - INFO - Distance-Based Metric absolute_differences: 0.300000
+2024-11-01 16:10:48,398 - INFO - Distance-Based Metric: 0.300000
+2024-11-01 16:10:48,398 - INFO - Flip Rate for Syllabus Predictions: 0.500000
+2024-11-01 16:10:48,398 - INFO - Flip Rate for Opinion Predictions: 0.600000
+2024-11-01 16:10:48,399 - INFO - Macro F1 Score for Syllabus: 0.45054945054945056
+2024-11-01 16:10:48,400 - INFO - Macro F1 Score for Opinion: 0.4

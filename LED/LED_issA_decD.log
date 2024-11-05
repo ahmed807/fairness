@@ -1,0 +1,33 @@
+2024-10-17 15:06:09,248 - INFO - CUDA is available
+2024-10-17 15:06:09,249 - INFO - Number of GPUs: 4
+2024-10-17 15:06:09,257 - INFO - Device 0: NVIDIA A40
+2024-10-17 15:06:09,257 - INFO - Device 1: NVIDIA A40
+2024-10-17 15:06:09,257 - INFO - Device 2: NVIDIA A40
+2024-10-17 15:06:09,257 - INFO - Device 3: NVIDIA A40
+2024-10-17 15:06:09,257 - INFO - Using GPU Device: cuda:1
+2024-10-17 15:06:12,698 - INFO - Tokenizing datasets
+2024-10-17 15:10:49,485 - INFO - CUDA is available
+2024-10-17 15:10:49,485 - INFO - Number of GPUs: 4
+2024-10-17 15:10:49,510 - INFO - Device 0: NVIDIA A40
+2024-10-17 15:10:49,510 - INFO - Device 1: NVIDIA A40
+2024-10-17 15:10:49,510 - INFO - Device 2: NVIDIA A40
+2024-10-17 15:10:49,510 - INFO - Device 3: NVIDIA A40
+2024-10-17 15:10:49,510 - INFO - Using GPU Device: cuda:1
+2024-10-17 15:10:53,394 - INFO - Tokenizing datasets
+2024-10-17 15:10:54,087 - INFO - Preprocessing 9 examples
+2024-10-17 15:11:18,488 - INFO - Preprocessing 9 examples
+2024-10-17 15:11:39,272 - INFO - Preprocessing 9 examples
+2024-10-17 15:11:58,489 - INFO - Preprocessing 9 examples
+2024-10-17 15:12:17,769 - INFO - Preprocessing 9 examples
+2024-10-17 15:12:18,641 - INFO - Preprocessing 9 examples
+2024-10-17 15:12:30,946 - INFO - Preprocessing 9 examples
+2024-10-17 15:12:50,337 - INFO - Starting training
+2024-10-17 15:17:26,946 - INFO - CUDA is available
+2024-10-17 15:17:26,947 - INFO - Number of GPUs: 4
+2024-10-17 15:17:26,955 - INFO - Device 0: NVIDIA A40
+2024-10-17 15:17:26,955 - INFO - Device 1: NVIDIA A40
+2024-10-17 15:17:26,955 - INFO - Device 2: NVIDIA A40
+2024-10-17 15:17:26,956 - INFO - Device 3: NVIDIA A40
+2024-10-17 15:17:26,956 - INFO - Using GPU Device: cuda:1
+2024-10-17 15:17:30,138 - INFO - Tokenizing datasets
+2024-10-17 15:17:33,245 - INFO - Starting training

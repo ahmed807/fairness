@@ -1,0 +1,16 @@
+2024-10-19 23:51:12,689 - INFO - CUDA is available
+2024-10-19 23:51:12,690 - INFO - Number of GPUs: 4
+2024-10-19 23:51:12,718 - INFO - Device 0: NVIDIA A40
+2024-10-19 23:51:12,718 - INFO - Device 1: NVIDIA A40
+2024-10-19 23:51:12,718 - INFO - Device 2: NVIDIA A40
+2024-10-19 23:51:12,718 - INFO - Device 3: NVIDIA A40
+2024-10-19 23:51:12,718 - INFO - Using GPU Device: cuda:3
+2024-10-19 23:51:22,078 - INFO - Tokenizing datasets
+2024-10-19 23:51:22,807 - INFO - Preprocessing 12 examples
+2024-10-19 23:51:39,332 - INFO - Preprocessing 12 examples
+2024-10-19 23:51:58,050 - INFO - Preprocessing 12 examples
+2024-10-19 23:52:22,291 - INFO - Preprocessing 12 examples
+2024-10-19 23:52:48,151 - INFO - Preprocessing 12 examples
+2024-10-19 23:52:56,575 - INFO - Preprocessing 12 examples
+2024-10-19 23:53:19,088 - INFO - Preprocessing 12 examples
+2024-10-19 23:53:42,049 - INFO - Starting training

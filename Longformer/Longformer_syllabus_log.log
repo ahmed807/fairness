@@ -1,0 +1,17 @@
+2024-10-28 17:29:27,311 - INFO - Longformer Evaluation results: {'eval_runtime': 120.9766, 'eval_samples_per_second': 4.472, 'eval_steps_per_second': 1.124, 'epoch': 4.0}
+2024-10-28 17:31:26,841 - INFO - Predictions type: <class 'tuple'>
+2024-10-28 17:31:26,841 - INFO - Logits shape: (547, 2)
+2024-10-28 17:31:26,927 - INFO -  True Label: 1, Predicted Label: 1
+2024-10-28 17:31:26,928 - INFO -  True Label: 0, Predicted Label: 1
+2024-10-28 17:31:26,928 - INFO -  True Label: 0, Predicted Label: 1
+2024-10-28 17:31:26,928 - INFO -  True Label: 0, Predicted Label: 1
+2024-10-28 17:31:26,928 - INFO -  True Label: 1, Predicted Label: 1
+2024-10-28 17:31:26,928 - INFO -  True Label: 0, Predicted Label: 1
+2024-10-28 17:31:26,928 - INFO -  True Label: 0, Predicted Label: 1
+2024-10-28 17:31:26,928 - INFO -  True Label: 0, Predicted Label: 1
+2024-10-28 17:31:26,928 - INFO -  True Label: 0, Predicted Label: 1
+2024-10-28 17:31:26,928 - INFO -  True Label: 1, Predicted Label: 1
+2024-10-28 17:31:26,959 - INFO - Accuracy: 0.519196
+2024-10-28 17:31:26,959 - INFO - Precision: 0.520221
+2024-10-28 17:31:26,959 - INFO - Recall: 0.992982
+2024-10-28 17:31:26,959 - INFO - F1 Score: 0.682750
