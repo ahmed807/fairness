@@ -5,8 +5,12 @@ from datasets import load_dataset
 from transformers import (
     LEDForConditionalGeneration,
     LEDTokenizer,
+    LEDForConditionalGeneration,
+    LongT5ForConditionalGeneration,
     Seq2SeqTrainingArguments,
-    Trainer
+    Trainer,
+    AutoTokenizer,
+    AutoModelForSeq2SeqLM
 )
 from huggingface_hub import login, HfApi
 

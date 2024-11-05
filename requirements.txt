@@ -6,6 +6,6 @@ huggingface-hub
 torch
 matplotlib
 numpy
-
+accelerate
 # When in a new H100 or any GPU
 ## sudo apt-get install python3-dev
