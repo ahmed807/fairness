@@ -87,28 +87,44 @@ def predict_decision_direction(summary):
     else:
         return 0.0  # Use numerical label for unknown
 
+
 # Extract summaries and true labels
-summaries = dataset['train']['generated_summary']# Adjust the split name if necessary
+summaries_opinion = dataset['train']['opinionOfTheCourt']  # Use opinionOfTheCourt field
+summaries_syllabus = dataset['train']['syllabus']  # Use syllabus field
 true_labels = dataset['train']['decisionDirection']  # Adjust the field name if necessary
 
-####
-##### evaluate on opnion aand syllabus
-####
+# Predict decision directions for opinionOfTheCourt
+predicted_labels_opinion = [predict_decision_direction(summary) for summary in summaries_opinion]
 
-# Predict decision directions
-predicted_labels = [predict_decision_direction(summary) for summary in summaries]
+# Calculate metrics for opinionOfTheCourt
+accuracy_opinion = accuracy_score(true_labels, predicted_labels_opinion)
+precision_opinion = precision_score(true_labels, predicted_labels_opinion, average='weighted', zero_division=0)
+recall_opinion = recall_score(true_labels, predicted_labels_opinion, average='weighted', zero_division=0)
+f1_opinion = f1_score(true_labels, predicted_labels_opinion, average='weighted', zero_division=0)
 
-# Calculate metrics
-accuracy = accuracy_score(true_labels, predicted_labels)
-precision = precision_score(true_labels, predicted_labels, average='weighted', zero_division=0)
-recall = recall_score(true_labels, predicted_labels, average='weighted', zero_division=0)
-f1 = f1_score(true_labels, predicted_labels, average='weighted', zero_division=0)
+print(f"Opinion - Accuracy: {accuracy_opinion}")
+print(f"Opinion - Precision: {precision_opinion}")
+print(f"Opinion - Recall: {recall_opinion}")
+print(f"Opinion - F1 Score: {f1_opinion}")
+logging.info("Opinion - Accuracy: %f", accuracy_opinion)
+logging.info("Opinion - Precision: %f", precision_opinion)
+logging.info("Opinion - Recall: %f", recall_opinion)
+logging.info("Opinion - F1 Score: %f", f1_opinion)
 
-print(f"Accuracy: {accuracy}")
-print(f"Precision: {precision}")
-print(f"Recall: {recall}")
-print(f"F1 Score: {f1}")
-logging.info("Accuracy: %f", accuracy)
-logging.info("Precision: %f", precision)
-logging.info("Recall: %f", recall)
-logging.info("F1 Score: %f", f1)
+# Predict decision directions for syllabus
+predicted_labels_syllabus = [predict_decision_direction(summary) for summary in summaries_syllabus]
+
+# Calculate metrics for syllabus
+accuracy_syllabus = accuracy_score(true_labels, predicted_labels_syllabus)
+precision_syllabus = precision_score(true_labels, predicted_labels_syllabus, average='weighted', zero_division=0)
+recall_syllabus = recall_score(true_labels, predicted_labels_syllabus, average='weighted', zero_division=0)
+f1_syllabus = f1_score(true_labels, predicted_labels_syllabus, average='weighted', zero_division=0)
+
+print(f"Syllabus - Accuracy: {accuracy_syllabus}")
+print(f"Syllabus - Precision: {precision_syllabus}")
+print(f"Syllabus - Recall: {recall_syllabus}")
+print(f"Syllabus - F1 Score: {f1_syllabus}")
+logging.info("Syllabus - Accuracy: %f", accuracy_syllabus)
+logging.info("Syllabus - Precision: %f", precision_syllabus)
+logging.info("Syllabus - Recall: %f", recall_syllabus)
+logging.info("Syllabus - F1 Score: %f", f1_syllabus)

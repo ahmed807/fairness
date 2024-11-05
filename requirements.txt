@@ -7,4 +7,5 @@ torch
 matplotlib
 numpy
 
-# sudo apt-get install python3-dev
+# When in a new H100 or any GPU
+## sudo apt-get install python3-dev
