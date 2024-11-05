@@ -25,18 +25,19 @@ model_tokenizer_configs = [
 
 
     },
-    {
-        "tokenizer" : "AutoTokenizer.from_pretrained('Stancld/long-t5-tglobal-base')",
-        "model" : "AutoModelForSeq2SeqLM.from_pretrained('Stancld/long-t5-tglobal-base')",
-        "log_file_name" : "t5-base_log.log",
-        "pretrained_model_save_path" : "LongT5_tglobal_base/model",
-        "repo_id": "ahmed275/LongT5_tglobal_base",
-        "push_dataset_name": "ahmed275/generated_summaries_LongT5_tglobal_base"
 
-                
-    }
 ]
 
+    # {
+    #     "tokenizer" : "AutoTokenizer.from_pretrained('Stancld/long-t5-tglobal-base')",
+    #     "model" : "AutoModelForSeq2SeqLM.from_pretrained('Stancld/long-t5-tglobal-base')",
+    #     "log_file_name" : "t5-base_log.log",
+    #     "pretrained_model_save_path" : "LongT5_tglobal_base/model",
+    #     "repo_id": "ahmed275/LongT5_tglobal_base",
+    #     "push_dataset_name": "ahmed275/generated_summaries_LongT5_tglobal_base"
+
+                
+    # }
 def update_config(config_path, model, tokenizer,log_file_name,pretrained_model_save_path,repo_id,push_dataset_name):
     with open(config_path, 'r') as f:
         config = yaml.safe_load(f)
