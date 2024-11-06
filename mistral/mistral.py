@@ -75,6 +75,8 @@ model = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-Instruct-v0.3
 if tokenizer.pad_token_id is None:
     tokenizer.pad_token_id = tokenizer.eos_token_id
 
+
+
 # Function to predict decision direction
 def predict_decision_direction(summary):
     prompt = f'''In order to determine whether an outcome is liberal (2) or conservative (1), the following scheme is employed. 
@@ -90,12 +92,23 @@ def predict_decision_direction(summary):
     inputs = tokenizer(prompt, return_tensors='pt', padding=True, truncation=True, max_length=4096).to(model.device)
     outputs = model.generate(inputs['input_ids'], attention_mask=inputs['attention_mask'], max_new_tokens=50, num_return_sequences=1, pad_token_id=tokenizer.pad_token_id)
     prediction = tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+        # Determine the prediction
     if "liberal" in prediction.lower():
-        return 2.0  # Use numerical label
+        predicted_label = 2.0
     elif "conservative" in prediction.lower():
-        return 1.0  # Use numerical label
+        predicted_label = 1.0
     else:
-        return 3.0  # Use numerical label for unknown
+        predicted_label = 3.0
+    
+    # Log the summary and prediction if the counter is less than 10
+    if log_counter < 3:
+        logging.info("Summary: %s", summary)
+        logging.info("Predicted Decision Direction: %f", predicted_label)
+        log_counter += 1
+    
+    return predicted_label
+
 
 
 # Extract summaries and true labels
@@ -104,6 +117,7 @@ summaries_syllabus = dataset['train']['syllabus']
 true_labels = dataset['train']['decisionDirection']
 
 # Predict decision directions for opinionOfTheCourt
+log_counter = 0
 predicted_labels_opinion = [predict_decision_direction(summary) for summary in summaries_opinion]
 
 # Calculate metrics for opinionOfTheCourt
@@ -122,6 +136,7 @@ logging.info("Opinion - Recall: %f", recall_opinion)
 logging.info("Opinion - F1 Score: %f", f1_opinion)
 
 # Predict decision directions for syllabus
+log_counter = 0
 predicted_labels_syllabus = [predict_decision_direction(summary) for summary in summaries_syllabus]
 
 # Calculate metrics for syllabus
