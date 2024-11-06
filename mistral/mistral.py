@@ -60,7 +60,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import logging
-
+from huggingface_hub import login, HfApi
+login(token='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')
 logging.basicConfig(filename='mistral_log.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Load the dataset
@@ -68,7 +69,7 @@ dataset = load_dataset("ahmed275/opinions_dataset_temporal_test_generated_summar
 
 # Load the tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.3")
-model = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-Instruct-v0.3").to('cuda:0' if torch.cuda.is_available() else 'cpu')
+model = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-Instruct-v0.3")
 
 # Set pad_token_id to eos_token_id if not already set
 if tokenizer.pad_token_id is None:
