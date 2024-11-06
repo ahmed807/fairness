@@ -86,7 +86,7 @@ def predict_decision_direction(summary):
     6. In interstate relations and private law issues, unspecifiable (3) for all such cases. 
     7. In miscellaneous, incorporation of foreign territories and executive authority vis-a-vis congress or the states or judicial authority vis-a-vis state or federal legislative authority = (2); legislative veto = (1). 
     Values: 1 conservative, 2 liberal, 3 unspecifiable.
-    Classify the following summary as liberal or conservative: \n\n{summary}\n\nDecision Direction:'''
+    Classify the following summary as liberal or conservative: \n\n{summary}\n\n Decision Direction: '''
     inputs = tokenizer(prompt, return_tensors='pt', padding=True, truncation=True, max_length=4096).to(model.device)
     outputs = model.generate(inputs['input_ids'], attention_mask=inputs['attention_mask'], max_new_tokens=50, num_return_sequences=1, pad_token_id=tokenizer.pad_token_id)
     prediction = tokenizer.decode(outputs[0], skip_special_tokens=True)
@@ -99,18 +99,18 @@ def predict_decision_direction(summary):
 
 
 # Extract summaries and true labels
-summaries_opinion = dataset['train']['opinionOfTheCourt']  # Use opinionOfTheCourt field
-summaries_syllabus = dataset['train']['syllabus']  # Use syllabus field
-true_labels = dataset['train']['decisionDirection']  
+summaries_opinion = dataset['train']['opinionOfTheCourt']
+summaries_syllabus = dataset['train']['syllabus']
+true_labels = dataset['train']['decisionDirection']
 
 # Predict decision directions for opinionOfTheCourt
 predicted_labels_opinion = [predict_decision_direction(summary) for summary in summaries_opinion]
 
 # Calculate metrics for opinionOfTheCourt
 accuracy_opinion = accuracy_score(true_labels, predicted_labels_opinion)
-precision_opinion = precision_score(true_labels, predicted_labels_opinion, average='weighted', zero_division=0)
-recall_opinion = recall_score(true_labels, predicted_labels_opinion, average='weighted', zero_division=0)
-f1_opinion = f1_score(true_labels, predicted_labels_opinion, average='weighted', zero_division=0)
+precision_opinion = precision_score(true_labels, predicted_labels_opinion, average='macro', zero_division=0)
+recall_opinion = recall_score(true_labels, predicted_labels_opinion, average='macro', zero_division=0)
+f1_opinion = f1_score(true_labels, predicted_labels_opinion, average='macro', zero_division=0)
 
 print(f"Opinion - Accuracy: {accuracy_opinion}")
 print(f"Opinion - Precision: {precision_opinion}")
@@ -126,9 +126,9 @@ predicted_labels_syllabus = [predict_decision_direction(summary) for summary in 
 
 # Calculate metrics for syllabus
 accuracy_syllabus = accuracy_score(true_labels, predicted_labels_syllabus)
-precision_syllabus = precision_score(true_labels, predicted_labels_syllabus, average='weighted', zero_division=0)
-recall_syllabus = recall_score(true_labels, predicted_labels_syllabus, average='weighted', zero_division=0)
-f1_syllabus = f1_score(true_labels, predicted_labels_syllabus, average='weighted', zero_division=0)
+precision_syllabus = precision_score(true_labels, predicted_labels_syllabus, average='macro', zero_division=0)
+recall_syllabus = recall_score(true_labels, predicted_labels_syllabus, average='macro', zero_division=0)
+f1_syllabus = f1_score(true_labels, predicted_labels_syllabus, average='macro', zero_division=0)
 
 print(f"Syllabus - Accuracy: {accuracy_syllabus}")
 print(f"Syllabus - Precision: {precision_syllabus}")
