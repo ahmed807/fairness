@@ -19,3 +19,13 @@ All Dataset
 
 Opinion and syllabus
 
+Opinion and syllabus
+
+2024-11-06 17:47:36,362 - INFO - Opinion - Accuracy: 0.521024
+2024-11-06 17:47:36,363 - INFO - Opinion - Precision: 0.271466
+2024-11-06 17:47:36,363 - INFO - Opinion - Recall: 0.521024
+2024-11-06 17:47:36,363 - INFO - Opinion - F1 Score: 0.356951
+2024-11-06 18:06:01,608 - INFO - Syllabus - Accuracy: 0.521024
+2024-11-06 18:06:01,608 - INFO - Syllabus - Precision: 0.271466
+2024-11-06 18:06:01,608 - INFO - Syllabus - Recall: 0.521024
+2024-11-06 18:06:01,608 - INFO - Syllabus - F1 Score: 0.356951

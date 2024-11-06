@@ -7,5 +7,10 @@ torch
 matplotlib
 numpy
 accelerate
+protobuf
+sentencepiece
+
+sled
+py-sled
 # When in a new H100 or any GPU
 ## sudo apt-get install python3-dev

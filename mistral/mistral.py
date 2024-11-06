@@ -69,7 +69,7 @@ dataset = load_dataset("ahmed275/opinions_dataset_temporal_test_generated_summar
 
 # Load the tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.3")
-model = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-Instruct-v0.3")
+model = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-Instruct-v0.3").to("cuda")
 
 # Set pad_token_id to eos_token_id if not already set
 if tokenizer.pad_token_id is None:
