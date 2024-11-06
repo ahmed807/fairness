@@ -33,8 +33,8 @@ login(token=config['login_token'])
 dataset = load_dataset(config['dataset_name'])
 
 # Load the tokenizer and model using eval
-tokenizer = eval(config['tokenizer'])
-model = eval(config['model'])
+model= LongT5ForConditionalGeneration.from_pretrained('Stancld/longt5-tglobal-large-16384-pubmed-3k_steps')
+tokenizer=AutoTokenizer.from_pretrained('Stancld/longt5-tglobal-large-16384-pubmed-3k_steps')
 
 def preprocess_function(examples):
     logging.info(f"Preprocessing {len(examples)} examples")
@@ -92,6 +92,7 @@ training_args = Seq2SeqTrainingArguments(
     save_total_limit=2,
     predict_with_generate=True,
     fp16=True,
+    gradient_accumulation_steps=4,
 )
 
 trainer = Trainer(
