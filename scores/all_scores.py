@@ -19,7 +19,7 @@ print("Using GPU ",os.environ["CUDA_VISIBLE_DEVICES"])
 
 # Configure logging
 logging.basicConfig(
-    filename='all_scores.log',
+    filename='./all_scores.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     force=True
@@ -120,4 +120,4 @@ scores_df = pd.DataFrame(scores_list)
 print(scores_df)
 
 # Save the DataFrame to a CSV file
-scores_df.to_csv('case_scores_mixed_liberal_75.csv', index=False)
+scores_df.to_csv('./case_scores_mixed_liberal_75.csv', index=False)
