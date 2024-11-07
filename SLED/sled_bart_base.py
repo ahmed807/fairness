@@ -9,8 +9,13 @@ from transformers import (
     Trainer
 )
 from huggingface_hub import login, HfApi
-
+import sled  # ** required so SLED would be properly registered by the AutoClasses **
+from transformers import AutoTokenizer, AutoModel
+import torch
 # Configure logging
+import torch
+
+
 logging.basicConfig(filename='BART_SLED.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Replace 'your_huggingface_token' with your actual token
@@ -21,23 +26,25 @@ df = pd.DataFrame(dataset['test'])
 
 # Load the tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained('tau/bart-base-sled')
-model = AutoModelForSeq2SeqLM.from_pretrained('tau/bart-base-sled')
+model = AutoModel.from_pretrained('tau/bart-base-sled')
+
 
 def preprocess_function(examples):
     logging.info(f"Preprocessing {len(examples)} examples")
     inputs = examples['opinionOfTheCourt']
     targets = examples['syllabus']
-    model_inputs = tokenizer(inputs, max_length=1024, truncation=True, padding='max_length')
-    labels = tokenizer(targets, max_length=1024, truncation=True, padding='max_length')
+    # model_inputs = tokenizer(inputs, max_length=16384, truncation=True, padding='max_length')
+    model_inputs = tokenizer(inputs)
+    labels = tokenizer(targets)
 
     model_inputs['labels'] = labels['input_ids']
 
     # We have to make sure that the PAD token is ignored
     # -100 for loss
-    model_inputs["labels"] = [
-        [-100 if token == tokenizer.pad_token_id else token for token in labels]
-        for labels in model_inputs["labels"]
-    ]
+    # model_inputs["labels"] = [
+    #     [-100 if token == tokenizer.pad_token_id else token for token in labels]
+    #     for labels in model_inputs["labels"]
+    # ]
 
     return model_inputs
 
@@ -45,6 +52,9 @@ def preprocess_function(examples):
 logging.info("Tokenizing datasets")
 tokenized_train_dataset = dataset['train'].map(preprocess_function, batched=True, remove_columns=dataset['train'].column_names)
 tokenized_val_dataset = dataset['validation'].map(preprocess_function, batched=True, remove_columns=dataset['validation'].column_names)
+
+
+model.resize_token_embeddings(len(tokenizer))
 
 # Define training arguments
 training_args = Seq2SeqTrainingArguments(
@@ -78,7 +88,7 @@ logging.info(f"Evaluation results: {results}")
 
 # Generate summaries
 def generate_summary(opinion):
-    inputs = tokenizer(opinion, return_tensors='pt', max_length=1024, truncation=True, padding='max_length')
+    inputs = tokenizer(opinion, return_tensors='pt', max_length=16384, truncation=True, padding='max_length')
     summary_ids = model.generate(inputs['input_ids'].to("cuda"), max_length=1024, num_beams=4, early_stopping=True)
     return tokenizer.decode(summary_ids[0], skip_special_tokens=True)
 

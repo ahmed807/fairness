@@ -1,0 +1,70 @@
+2024-11-07 22:46:50,326 - INFO - Could not find a weights file with the new huggingface api hub. Attempting fallback to the old api
+2024-11-07 22:46:50,326 - INFO - Looking for pretrained weights on https://huggingface.co/tau/bart-base-sled/resolve/main/pytorch_model.bin
+2024-11-07 22:46:50,497 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported
+2024-11-07 22:46:50,499 - INFO - Tokenizing datasets
+2024-11-07 22:46:50,526 - INFO - Preprocessing 12 examples
+2024-11-07 22:46:56,685 - INFO - Preprocessing 12 examples
+2024-11-07 22:47:01,753 - INFO - Preprocessing 12 examples
+2024-11-07 22:47:07,507 - INFO - Preprocessing 12 examples
+2024-11-07 22:47:12,749 - INFO - Preprocessing 12 examples
+2024-11-07 22:47:14,383 - INFO - Preprocessing 12 examples
+2024-11-07 22:48:53,912 - INFO - Could not find a weights file with the new huggingface api hub. Attempting fallback to the old api
+2024-11-07 22:48:53,912 - INFO - Looking for pretrained weights on https://huggingface.co/tau/bart-base-sled/resolve/main/pytorch_model.bin
+2024-11-07 22:48:54,095 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported
+2024-11-07 22:49:44,085 - INFO - Could not find a weights file with the new huggingface api hub. Attempting fallback to the old api
+2024-11-07 22:49:44,085 - INFO - Looking for pretrained weights on https://huggingface.co/tau/bart-base-sled/resolve/main/pytorch_model.bin
+2024-11-07 22:49:44,254 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported
+2024-11-07 22:51:25,529 - INFO - Could not find a weights file with the new huggingface api hub. Attempting fallback to the old api
+2024-11-07 22:51:25,529 - INFO - Looking for pretrained weights on https://huggingface.co/tau/bart-base-sled/resolve/main/pytorch_model.bin
+2024-11-07 22:51:25,698 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported
+2024-11-07 22:51:58,653 - INFO - Could not find a weights file with the new huggingface api hub. Attempting fallback to the old api
+2024-11-07 22:51:58,653 - INFO - Looking for pretrained weights on https://huggingface.co/tau/bart-base-sled/resolve/main/pytorch_model.bin
+2024-11-07 22:51:58,814 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported
+2024-11-07 22:51:58,815 - INFO - Tokenizing datasets
+2024-11-07 22:51:58,848 - INFO - Preprocessing 12 examples
+2024-11-07 22:54:22,945 - INFO - Could not find a weights file with the new huggingface api hub. Attempting fallback to the old api
+2024-11-07 22:54:22,945 - INFO - Looking for pretrained weights on https://huggingface.co/tau/bart-base-sled/resolve/main/pytorch_model.bin
+2024-11-07 22:54:23,113 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported
+2024-11-07 22:54:23,114 - INFO - Tokenizing datasets
+2024-11-07 22:56:13,352 - INFO - Could not find a weights file with the new huggingface api hub. Attempting fallback to the old api
+2024-11-07 22:56:13,352 - INFO - Looking for pretrained weights on https://huggingface.co/tau/bart-base-sled/resolve/main/pytorch_model.bin
+2024-11-07 22:56:13,519 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported
+2024-11-07 22:56:37,936 - INFO - Could not find a weights file with the new huggingface api hub. Attempting fallback to the old api
+2024-11-07 22:56:37,936 - INFO - Looking for pretrained weights on https://huggingface.co/tau/bart-base-sled/resolve/main/pytorch_model.bin
+2024-11-07 22:56:38,286 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported
+2024-11-07 22:57:41,737 - INFO - Could not find a weights file with the new huggingface api hub. Attempting fallback to the old api
+2024-11-07 22:57:41,738 - INFO - Looking for pretrained weights on https://huggingface.co/tau/bart-base-sled/resolve/main/pytorch_model.bin
+2024-11-07 22:57:41,901 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported
+2024-11-07 23:00:03,385 - INFO - Could not find a weights file with the new huggingface api hub. Attempting fallback to the old api
+2024-11-07 23:00:03,385 - INFO - Looking for pretrained weights on https://huggingface.co/tau/bart-base-sled/resolve/main/pytorch_model.bin
+2024-11-07 23:00:03,567 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported
+2024-11-07 23:00:03,569 - INFO - Tokenizing datasets
+2024-11-07 23:00:03,852 - INFO - Starting training
+2024-11-07 23:03:45,220 - INFO - Could not find a weights file with the new huggingface api hub. Attempting fallback to the old api
+2024-11-07 23:03:45,220 - INFO - Looking for pretrained weights on https://huggingface.co/tau/bart-base-sled/resolve/main/pytorch_model.bin
+2024-11-07 23:03:45,392 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported
+2024-11-07 23:03:45,395 - INFO - Tokenizing datasets
+2024-11-07 23:03:45,427 - INFO - Preprocessing 12 examples
+2024-11-07 23:03:47,373 - INFO - Preprocessing 12 examples
+2024-11-07 23:03:49,093 - INFO - Preprocessing 12 examples
+2024-11-07 23:03:51,402 - INFO - Preprocessing 12 examples
+2024-11-07 23:03:53,841 - INFO - Preprocessing 12 examples
+2024-11-07 23:03:54,713 - INFO - Preprocessing 12 examples
+2024-11-07 23:03:57,458 - INFO - Starting training
+2024-11-07 23:04:36,779 - INFO - Could not find a weights file with the new huggingface api hub. Attempting fallback to the old api
+2024-11-07 23:04:36,780 - INFO - Looking for pretrained weights on https://huggingface.co/tau/bart-base-sled/resolve/main/pytorch_model.bin
+2024-11-07 23:04:36,956 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported
+2024-11-07 23:04:36,958 - INFO - Tokenizing datasets
+2024-11-07 23:04:36,983 - INFO - Preprocessing 12 examples
+2024-11-07 23:04:38,488 - INFO - Preprocessing 12 examples
+2024-11-07 23:04:40,056 - INFO - Preprocessing 12 examples
+2024-11-07 23:04:42,151 - INFO - Preprocessing 12 examples
+2024-11-07 23:04:44,344 - INFO - Preprocessing 12 examples
+2024-11-07 23:04:45,090 - INFO - Preprocessing 12 examples
+2024-11-07 23:04:47,474 - INFO - Starting training
+2024-11-07 23:06:15,477 - INFO - Could not find a weights file with the new huggingface api hub. Attempting fallback to the old api
+2024-11-07 23:06:15,477 - INFO - Looking for pretrained weights on https://huggingface.co/tau/bart-base-sled/resolve/main/pytorch_model.bin
+2024-11-07 23:06:15,646 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported
+2024-11-07 23:06:15,648 - INFO - Tokenizing datasets
+2024-11-07 23:06:15,682 - INFO - Preprocessing 12 examples
+2024-11-07 23:06:18,433 - INFO - Starting training

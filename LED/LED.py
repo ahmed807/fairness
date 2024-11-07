@@ -1,6 +1,12 @@
 import yaml
 import argparse
+import torch._dynamo.config
+
+# Add this line before creating the trainer
+torch._dynamo.config.optimize_ddp = False
 import logging
+
+
 from datasets import load_dataset
 from transformers import (
     LEDForConditionalGeneration,
