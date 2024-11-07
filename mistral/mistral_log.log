@@ -29,3 +29,23 @@ Opinion and syllabus
 2024-11-06 18:06:01,608 - INFO - Syllabus - Precision: 0.271466
 2024-11-06 18:06:01,608 - INFO - Syllabus - Recall: 0.521024
 2024-11-06 18:06:01,608 - INFO - Syllabus - F1 Score: 0.356951
+
+
+
+
+MACRO:
+2024-11-06 22:17:51,441 - INFO - Opinion - Accuracy: 0.521024
+2024-11-06 22:17:51,441 - INFO - Opinion - Precision: 0.260512
+2024-11-06 22:17:51,442 - INFO - Opinion - Recall: 0.500000
+2024-11-06 22:17:51,442 - INFO - Opinion - F1 Score: 0.342548
+
+
+Opinion - Accuracy: 0.5210237659963437
+Opinion - Precision: 0.26051188299817185
+Opinion - Recall: 0.5
+Opinion - F1 Score: 0.3425480769230769
+
+Syllabus - Accuracy: 0.5210237659963437
+Syllabus - Precision: 0.26051188299817185
+Syllabus - Recall: 0.5
+Syllabus - F1 Score: 0.3425480769230769

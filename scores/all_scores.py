@@ -10,7 +10,7 @@ from AlignScore.src.alignscore import AlignScore
 from UniEval.utils import convert_to_json
 from UniEval.metric.evaluator import get_evaluator
 
-print("Using GPU ", os.environ["CUDA_VISIBLE_DEVICES"])
+# print("Using GPU ", os.environ["CUDA_VISIBLE_DEVICES"])
 
 # Configure logging
 logging.basicConfig(
