@@ -13,14 +13,16 @@ from transformers import (
     AutoModelForSeq2SeqLM
 )
 from huggingface_hub import login, HfApi
-
-# Parse command-line arguments
-parser = argparse.ArgumentParser(description='Run LED model training.')
-parser.add_argument('config_path', type=str, help='Path to the configuration file')
-args = parser.parse_args()
+import os 
+# # Parse command-line arguments
+# parser = argparse.ArgumentParser(description='Run LED model training.')
+# parser.add_argument('config_path', type=str, help='Path to the configuration file')
+# args = parser.parse_args()
 
 # Load configuration
-with open(args.config_path, 'r') as f:
+config_path = os.path.abspath('/root/fairness/config.yaml')
+
+with open(config_path, 'r') as f:
     config = yaml.safe_load(f)['led']
 
 # Configure logging
@@ -33,8 +35,8 @@ login(token=config['login_token'])
 dataset = load_dataset(config['dataset_name'])
 
 # Load the tokenizer and model using eval
-model= LongT5ForConditionalGeneration.from_pretrained('Stancld/longt5-tglobal-large-16384-pubmed-3k_steps')
-tokenizer=AutoTokenizer.from_pretrained('Stancld/longt5-tglobal-large-16384-pubmed-3k_steps')
+model= LongT5ForConditionalGeneration.from_pretrained('google/long-t5-tglobal-xl')
+tokenizer=AutoTokenizer.from_pretrained('google/long-t5-tglobal-xl')
 
 def preprocess_function(examples):
     logging.info(f"Preprocessing {len(examples)} examples")
@@ -72,8 +74,10 @@ logging.info("Tokenizing datasets")
 tokenized_train_dataset = dataset['train'].map(preprocess_function, batched=True, remove_columns=dataset['train'].column_names)
 tokenized_val_dataset = dataset['validation'].map(preprocess_function, batched=True, remove_columns=dataset['validation'].column_names)
 
+# logging.info(tokenized_train_dataset[0])
+logging.info(len(tokenized_train_dataset[0]["input_ids"]))
 # Set generate hyperparameters
-model.config.num_beams = 2
+model.config.num_beams = 4
 model.config.max_length = 1024
 model.config.min_length = 256
 model.config.length_penalty = 2.0
@@ -83,17 +87,19 @@ model.config.no_repeat_ngram_size = 3
 # Define training arguments
 training_args = Seq2SeqTrainingArguments(
     output_dir='./srv/results',
-    evaluation_strategy='epoch',
+    eval_strategy='epoch',
     learning_rate=2e-5,
-    per_device_train_batch_size=1,
-    per_device_eval_batch_size=1,
+    per_device_train_batch_size=2,
+    per_device_eval_batch_size=2,
     num_train_epochs=10,
     weight_decay=0.01,
     save_total_limit=2,
     predict_with_generate=True,
-    fp16=True,
-    gradient_accumulation_steps=4,
-    torch_compile = True
+    fp16=False,
+    bf16 = True,
+    torch_compile = True,
+    optim = "adamw_torch_fused",
+    gradient_checkpointing=True
 )
 
 trainer = Trainer(
@@ -102,6 +108,9 @@ trainer = Trainer(
     train_dataset=tokenized_train_dataset,
     eval_dataset=tokenized_val_dataset,
 )
+
+# print(model)
+# logging.info(model)
 
 # Train the model
 logging.info("Starting training")
