@@ -9,7 +9,10 @@ import json
 from AlignScore.src.alignscore import AlignScore
 from UniEval.utils import convert_to_json
 from UniEval.metric.evaluator import get_evaluator
+import nltk
+from tqdm import tqdm
 
+nltk.download('punkt_tab')
 # print("Using GPU ", os.environ["CUDA_VISIBLE_DEVICES"])
 
 # Configure logging
@@ -43,13 +46,12 @@ logging.info("Initialized all scorers.")
 print("Initialized all scorers.")
 
 # Loop through each dataset configuration
-for config in datasets_config:
+for index, config in tqdm(enumerate(datasets_config), desc="Configs", total=len(datasets_config)):
     dataset_name = config['dataset_name']
     csv_filename = config['csv_filename']
 
     # Ensure the directory exists
     os.makedirs(os.path.dirname(csv_filename), exist_ok=True)
-
 
     # Load the dataset
     logging.info(f"Loading dataset {dataset_name} from Hugging Face...")
@@ -66,7 +68,7 @@ for config in datasets_config:
     scores_list = []
 
     # Calculate scores for each case
-    for index, row in df.iterrows():
+    for index, row in tqdm(df.iterrows(), desc=f"Processing {dataset_name}", total=len(df)):
         reference_summary = row['syllabus']
         candidate_summary = row['generated_summary']
         opinion_of_the_court = row['opinionOfTheCourt']
@@ -123,9 +125,6 @@ for config in datasets_config:
 
     # Convert the scores list to a DataFrame
     scores_df = pd.DataFrame(scores_list)
-
-    # # Print the DataFrame
-    # print(scores_df)
 
     # Save the DataFrame to a CSV file
     scores_df.to_csv(csv_filename, index=False)
