@@ -93,6 +93,7 @@ training_args = Seq2SeqTrainingArguments(
     predict_with_generate=True,
     fp16=True,
     gradient_accumulation_steps=4,
+    torch_compile = True
 )
 
 trainer = Trainer(
