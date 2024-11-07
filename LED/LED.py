@@ -35,8 +35,8 @@ login(token=config['login_token'])
 dataset = load_dataset(config['dataset_name'])
 
 # Load the tokenizer and model using eval
-model= LongT5ForConditionalGeneration.from_pretrained('google/long-t5-tglobal-xl')
-tokenizer=AutoTokenizer.from_pretrained('google/long-t5-tglobal-xl')
+model= LongT5ForConditionalGeneration.from_pretrained('google/long-t5-tglobal-large')
+tokenizer=AutoTokenizer.from_pretrained('google/long-t5-tglobal-large')
 
 def preprocess_function(examples):
     logging.info(f"Preprocessing {len(examples)} examples")
