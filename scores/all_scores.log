@@ -70,3 +70,15 @@
 2024-11-08 15:02:21,845 - INFO - Loading dataset ahmed275/decoding_summaries_top_k_50 from Hugging Face...
 2024-11-08 15:02:34,359 - INFO - DATASET ahmed275/decoding_summaries_top_k_50 all scorers.
 2024-11-08 15:02:34,434 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-08 17:13:36,239 - INFO - Scores saved to top_k/case_scores_top_k_50.csv
+2024-11-08 17:13:36,239 - INFO - Loading dataset ahmed275/decoding_summaries_top_k_25 from Hugging Face...
+2024-11-08 17:13:49,417 - INFO - DATASET ahmed275/decoding_summaries_top_k_25 all scorers.
+2024-11-08 17:13:49,491 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-08 19:23:19,991 - INFO - Scores saved to top_k/case_scores_top_k_25.csv
+2024-11-08 19:23:19,991 - INFO - Loading dataset ahmed275/decoding_summaries_top_k_10 from Hugging Face...
+2024-11-08 19:23:32,417 - INFO - DATASET ahmed275/decoding_summaries_top_k_10 all scorers.
+2024-11-08 19:23:32,491 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-08 21:33:43,222 - INFO - Scores saved to top_k/case_scores_top_k_10.csv
+2024-11-08 21:33:43,222 - INFO - Loading dataset ahmed275/decoding_summaries_temperature_0.9 from Hugging Face...
+2024-11-08 21:33:55,672 - INFO - DATASET ahmed275/decoding_summaries_temperature_0.9 all scorers.
+2024-11-08 21:33:55,748 - INFO - Dataset loaded and converted to DataFrame.
