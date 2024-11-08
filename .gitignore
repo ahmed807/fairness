@@ -1,2 +1,3 @@
 case_with_all_sources_with_companion_cases_tag.jsonl
 *.safetensors
+SLED/bart-base-sled/model/pytorch_model.bin
