@@ -19,3 +19,50 @@
 2024-10-31 17:13:20,300 - INFO - Using default tokenizer.
 2024-10-31 17:13:33,157 - INFO - Initialized all scorers.
 2024-11-01 13:20:31,029 - INFO - Loading dataset from Hugging Face...
+2024-11-07 18:37:17,138 - INFO - Using default tokenizer.
+2024-11-07 18:48:40,297 - INFO - Initialized all scorers.
+2024-11-07 18:48:40,298 - INFO - Loading dataset ahmed275/opinions_dataset_temporal_test_generated_summaries_mixed_liberal_75 from Hugging Face...
+2024-11-07 18:48:51,228 - INFO - DATASET ahmed275/opinions_dataset_temporal_test_generated_summaries_mixed_liberal_75 all scorers.
+2024-11-07 18:48:51,315 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-07 18:56:28,230 - INFO - Using default tokenizer.
+
+
+2024-11-07 18:56:41,140 - INFO - Initialized all scorers.
+2024-11-07 18:56:41,141 - INFO - Loading dataset ahmed275/opinions_dataset_temporal_test_generated_summaries_mixed_liberal_75 from Hugging Face...
+2024-11-07 18:56:47,205 - INFO - DATASET ahmed275/opinions_dataset_temporal_test_generated_summaries_mixed_liberal_75 all scorers.
+2024-11-07 18:56:47,279 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-07 21:12:24,878 - INFO - Scores saved to mixed_liberal_75/case_scores_mixed_liberal_75.csv
+2024-11-07 21:12:24,879 - INFO - Loading dataset ahmed275/opinions_dataset_temporal_test_generated_summaries_mixed_conservative_75 from Hugging Face...
+2024-11-07 21:12:37,406 - INFO - DATASET ahmed275/opinions_dataset_temporal_test_generated_summaries_mixed_conservative_75 all scorers.
+2024-11-07 21:12:37,483 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-07 23:26:48,956 - INFO - Scores saved to mixed_conservative_75/case_scores_mixed_conservative_75.csv
+2024-11-07 23:26:48,957 - INFO - Loading dataset ahmed275/decoding_summaries_top_k_2000 from Hugging Face...
+2024-11-07 23:27:02,222 - INFO - DATASET ahmed275/decoding_summaries_top_k_2000 all scorers.
+2024-11-07 23:27:02,298 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-08 01:33:50,080 - INFO - Scores saved to top_k/case_scores_top_k_2000.csv
+2024-11-08 01:33:50,081 - INFO - Loading dataset ahmed275/decoding_summaries_top_k_1500 from Hugging Face...
+2024-11-08 01:34:02,858 - INFO - DATASET ahmed275/decoding_summaries_top_k_1500 all scorers.
+2024-11-08 01:34:02,933 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-08 03:41:45,057 - INFO - Scores saved to top_k/case_scores_top_k_1500.csv
+2024-11-08 03:41:45,058 - INFO - Loading dataset ahmed275/decoding_summaries_top_k_1000 from Hugging Face...
+2024-11-08 03:41:57,676 - INFO - DATASET ahmed275/decoding_summaries_top_k_1000 all scorers.
+2024-11-08 03:41:57,753 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-08 05:51:28,193 - INFO - Scores saved to top_k/case_scores_top_k_1000.csv
+2024-11-08 05:51:28,194 - INFO - Loading dataset ahmed275/decoding_summaries_top_k_500 from Hugging Face...
+2024-11-08 05:51:41,182 - INFO - DATASET ahmed275/decoding_summaries_top_k_500 all scorers.
+2024-11-08 05:51:41,258 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-08 08:01:52,066 - INFO - Scores saved to top_k/case_scores_top_k_500.csv
+2024-11-08 08:01:52,066 - INFO - Loading dataset ahmed275/decoding_summaries_top_k_250 from Hugging Face...
+2024-11-08 08:02:05,342 - INFO - DATASET ahmed275/decoding_summaries_top_k_250 all scorers.
+2024-11-08 08:02:05,418 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-08 10:11:39,595 - INFO - Scores saved to top_k/case_scores_top_k_250.csv
+2024-11-08 10:11:39,595 - INFO - Loading dataset ahmed275/decoding_summaries_top_k_100 from Hugging Face...
+2024-11-08 10:11:52,551 - INFO - DATASET ahmed275/decoding_summaries_top_k_100 all scorers.
+2024-11-08 10:11:52,630 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-08 12:20:42,480 - INFO - Scores saved to top_k/case_scores_top_k_100.csv
+2024-11-08 12:20:42,480 - INFO - Loading dataset ahmed275/decoding_summaries_top_k_75 from Hugging Face...
+2024-11-08 12:52:20,925 - INFO - Using default tokenizer.
+2024-11-08 12:52:33,585 - INFO - Initialized all scorers.
+2024-11-08 12:52:33,586 - INFO - Loading dataset ahmed275/decoding_summaries_top_k_75 from Hugging Face...
+2024-11-08 12:52:43,753 - INFO - DATASET ahmed275/decoding_summaries_top_k_75 all scorers.
+2024-11-08 12:52:43,828 - INFO - Dataset loaded and converted to DataFrame.

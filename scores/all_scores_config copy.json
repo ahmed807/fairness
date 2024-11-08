@@ -1,5 +1,37 @@
 [
     {
+        "dataset_name": "ahmed275/opinions_dataset_temporal_test_generated_summaries_mixed_liberal_75",
+        "csv_filename": "mixed_liberal_75/case_scores_mixed_liberal_75.csv"
+    },
+    {
+        "dataset_name": "ahmed275/opinions_dataset_temporal_test_generated_summaries_mixed_conservative_75",
+        "csv_filename": "mixed_conservative_75/case_scores_mixed_conservative_75.csv"
+    },
+    {
+        "dataset_name": "ahmed275/decoding_summaries_top_k_2000",
+        "csv_filename": "top_k/case_scores_top_k_2000.csv"
+    },
+    {
+        "dataset_name": "ahmed275/decoding_summaries_top_k_1500",
+        "csv_filename": "top_k/case_scores_top_k_1500.csv"
+    },
+    {
+        "dataset_name": "ahmed275/decoding_summaries_top_k_1000",
+        "csv_filename": "top_k/case_scores_top_k_1000.csv"
+    },
+    {
+        "dataset_name": "ahmed275/decoding_summaries_top_k_500",
+        "csv_filename": "top_k/case_scores_top_k_500.csv"
+    },
+    {
+        "dataset_name": "ahmed275/decoding_summaries_top_k_250",
+        "csv_filename": "top_k/case_scores_top_k_250.csv"
+    },
+    {
+        "dataset_name": "ahmed275/decoding_summaries_top_k_100",
+        "csv_filename": "top_k/case_scores_top_k_100.csv"
+    },
+    {
         "dataset_name": "ahmed275/decoding_summaries_top_k_75",
         "csv_filename": "top_k/case_scores_top_k_75.csv"
     },
