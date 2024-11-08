@@ -1,12 +1,11 @@
-import yaml
-import argparse
 import torch._dynamo.config
 
 # Add this line before creating the trainer
 torch._dynamo.config.optimize_ddp = False
+# torchrun --nproc_per_node=2 LED.py
+import yaml
+import argparse
 import logging
-
-
 from datasets import load_dataset
 from transformers import (
     LEDForConditionalGeneration,
@@ -29,7 +28,7 @@ import os
 config_path = os.path.abspath('/root/fairness/config.yaml')
 
 with open(config_path, 'r') as f:
-    config = yaml.safe_load(f)['led']
+    config = yaml.safe_load(f)['longT5_base']
 
 # Configure logging
 logging.basicConfig(filename=config['log_file_name'], level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -41,8 +40,8 @@ login(token=config['login_token'])
 dataset = load_dataset(config['dataset_name'])
 
 # Load the tokenizer and model using eval
-model= LongT5ForConditionalGeneration.from_pretrained('google/long-t5-tglobal-large')
-tokenizer=AutoTokenizer.from_pretrained('google/long-t5-tglobal-large')
+model= LongT5ForConditionalGeneration.from_pretrained('google/long-t5-tglobal-base')
+tokenizer=AutoTokenizer.from_pretrained('google/long-t5-tglobal-base')
 
 def preprocess_function(examples):
     logging.info(f"Preprocessing {len(examples)} examples")
@@ -105,7 +104,8 @@ training_args = Seq2SeqTrainingArguments(
     bf16 = True,
     torch_compile = True,
     optim = "adamw_torch_fused",
-    gradient_checkpointing=True
+    gradient_checkpointing=True,
+    ddp_find_unused_parameters=False  # Add this line
 )
 
 trainer = Trainer(

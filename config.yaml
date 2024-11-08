@@ -5,7 +5,8 @@ generate_summary:
   model: LongT5ForConditionalGeneration.from_pretrained('Stancld/longt5-tglobal-large-16384-pubmed-3k_steps')
   push_dataset_name: ahmed275/generated_summaries_LongT5_tglobal_large
   tokenizer: AutoTokenizer.from_pretrained('Stancld/longt5-tglobal-large-16384-pubmed-3k_steps')
-led:
+  model_name: "google/long-t5-tglobal-large"
+longT5_large:
   dataset_name: ahmed275/opinions_dataset_temporal
   log_file_name: t5-large_log.log
   login_token: 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
@@ -13,3 +14,11 @@ led:
   pretrained_model_save_path: LongT5_tglobal_large/model
   repo_id: ahmed275/LongT5_tglobal_large
   tokenizer: AutoTokenizer.from_pretrained('Stancld/longt5-tglobal-large-16384-pubmed-3k_steps')
+longT5_base:
+  dataset_name: ahmed275/opinions_dataset_temporal
+  log_file_name: t5-base_log.log
+  login_token: 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
+  model: LongT5ForConditionalGeneration.from_pretrained('google/long-t5-tglobal-base')
+  pretrained_model_save_path: LongT5_tglobal_base/model
+  repo_id: ahmed275/LongT5_tglobal_base
+  tokenizer: AutoTokenizer.from_pretrained('google/long-t5-tglobal-base')
