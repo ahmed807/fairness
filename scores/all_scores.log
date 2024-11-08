@@ -66,3 +66,7 @@
 2024-11-08 12:52:33,586 - INFO - Loading dataset ahmed275/decoding_summaries_top_k_75 from Hugging Face...
 2024-11-08 12:52:43,753 - INFO - DATASET ahmed275/decoding_summaries_top_k_75 all scorers.
 2024-11-08 12:52:43,828 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-08 15:02:21,845 - INFO - Scores saved to top_k/case_scores_top_k_75.csv
+2024-11-08 15:02:21,845 - INFO - Loading dataset ahmed275/decoding_summaries_top_k_50 from Hugging Face...
+2024-11-08 15:02:34,359 - INFO - DATASET ahmed275/decoding_summaries_top_k_50 all scorers.
+2024-11-08 15:02:34,434 - INFO - Dataset loaded and converted to DataFrame.
