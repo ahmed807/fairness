@@ -28,7 +28,7 @@ import os
 config_path = os.path.abspath('/root/fairness/config.yaml')
 
 with open(config_path, 'r') as f:
-    config = yaml.safe_load(f)['led']
+    config = yaml.safe_load(f)['longT5_base']
 
 # Configure logging
 logging.basicConfig(filename=config['log_file_name'], level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -40,8 +40,8 @@ login(token=config['login_token'])
 dataset = load_dataset(config['dataset_name'])
 
 # Load the tokenizer and model using eval
-model= LongT5ForConditionalGeneration.from_pretrained('google/long-t5-tglobal-large')
-tokenizer=AutoTokenizer.from_pretrained('google/long-t5-tglobal-large')
+model= LongT5ForConditionalGeneration.from_pretrained('google/long-t5-tglobal-base')
+tokenizer=AutoTokenizer.from_pretrained('google/long-t5-tglobal-base')
 
 def preprocess_function(examples):
     logging.info(f"Preprocessing {len(examples)} examples")
