@@ -25,7 +25,7 @@ import os
 # args = parser.parse_args()
 
 # Load configuration
-config_path = os.path.abspath('/root/fairness/config.yaml')
+config_path = os.path.abspath('/home/mostah/workspace/fairness/config.yaml')
 
 with open(config_path, 'r') as f:
     config = yaml.safe_load(f)['longT5_base']
