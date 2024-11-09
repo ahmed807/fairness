@@ -12,7 +12,7 @@ from UniEval.metric.evaluator import get_evaluator
 import nltk
 from tqdm import tqdm
 
-nltk.download('punkt_tab')
+# nltk.download('punkt_tab')
 # print("Using GPU ", os.environ["CUDA_VISIBLE_DEVICES"])
 
 # Configure logging
