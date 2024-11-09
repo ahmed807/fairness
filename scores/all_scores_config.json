@@ -1,25 +1,5 @@
 [
     {
-        "dataset_name": "ahmed275/decoding_summaries_top_k_75",
-        "csv_filename": "top_k/case_scores_top_k_75.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_top_k_50",
-        "csv_filename": "top_k/case_scores_top_k_50.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_top_k_25",
-        "csv_filename": "top_k/case_scores_top_k_25.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_top_k_10",
-        "csv_filename": "top_k/case_scores_top_k_10.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_temperature_0.9",
-        "csv_filename": "temperature/case_scores_temperature_0.9.csv"
-    },
-    {
         "dataset_name": "ahmed275/decoding_summaries_temperature_0.8",
         "csv_filename": "temperature/case_scores_temperature_0.8.csv"
     },

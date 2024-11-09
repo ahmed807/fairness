@@ -82,3 +82,46 @@
 2024-11-08 21:33:43,222 - INFO - Loading dataset ahmed275/decoding_summaries_temperature_0.9 from Hugging Face...
 2024-11-08 21:33:55,672 - INFO - DATASET ahmed275/decoding_summaries_temperature_0.9 all scorers.
 2024-11-08 21:33:55,748 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-08 23:42:13,884 - INFO - Scores saved to temperature/case_scores_temperature_0.9.csv
+2024-11-08 23:42:13,885 - INFO - Loading dataset ahmed275/decoding_summaries_temperature_0.8 from Hugging Face...
+2024-11-09 00:14:00,357 - INFO - Using default tokenizer.
+2024-11-09 00:14:13,455 - INFO - Initialized all scorers.
+2024-11-09 00:14:13,456 - INFO - Loading dataset ahmed275/decoding_summaries_temperature_0.8 from Hugging Face...
+2024-11-09 00:14:23,962 - INFO - DATASET ahmed275/decoding_summaries_temperature_0.8 all scorers.
+2024-11-09 00:14:24,038 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-09 02:22:07,737 - INFO - Scores saved to temperature/case_scores_temperature_0.8.csv
+2024-11-09 02:22:07,737 - INFO - Loading dataset ahmed275/decoding_summaries_temperature_0.7 from Hugging Face...
+2024-11-09 02:22:20,641 - INFO - DATASET ahmed275/decoding_summaries_temperature_0.7 all scorers.
+2024-11-09 02:22:20,716 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-09 04:30:47,827 - INFO - Scores saved to temperature/case_scores_temperature_0.7.csv
+2024-11-09 04:30:47,827 - INFO - Loading dataset ahmed275/decoding_summaries_temperature_0.6 from Hugging Face...
+2024-11-09 04:31:02,141 - INFO - DATASET ahmed275/decoding_summaries_temperature_0.6 all scorers.
+2024-11-09 04:31:02,217 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-09 06:38:38,377 - INFO - Scores saved to temperature/case_scores_temperature_0.6.csv
+2024-11-09 06:38:38,377 - INFO - Loading dataset ahmed275/decoding_summaries_temperature_0.5 from Hugging Face...
+2024-11-09 06:38:51,816 - INFO - DATASET ahmed275/decoding_summaries_temperature_0.5 all scorers.
+2024-11-09 06:38:51,897 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-09 08:46:24,457 - INFO - Scores saved to temperature/case_scores_temperature_0.5.csv
+2024-11-09 08:46:24,457 - INFO - Loading dataset ahmed275/decoding_summaries_temperature_0.4 from Hugging Face...
+2024-11-09 08:46:37,225 - INFO - DATASET ahmed275/decoding_summaries_temperature_0.4 all scorers.
+2024-11-09 08:46:37,301 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-09 10:54:38,050 - INFO - Scores saved to temperature/case_scores_temperature_0.4.csv
+2024-11-09 10:54:38,051 - INFO - Loading dataset ahmed275/decoding_summaries_top_p_0.9 from Hugging Face...
+2024-11-09 10:54:50,716 - INFO - DATASET ahmed275/decoding_summaries_top_p_0.9 all scorers.
+2024-11-09 10:54:50,791 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-09 13:01:16,682 - INFO - Scores saved to top_p/case_scores_top_p_0.9.csv
+2024-11-09 13:01:16,682 - INFO - Loading dataset ahmed275/decoding_summaries_top_p_0.8 from Hugging Face...
+2024-11-09 13:01:29,108 - INFO - DATASET ahmed275/decoding_summaries_top_p_0.8 all scorers.
+2024-11-09 13:01:29,184 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-09 15:09:41,358 - INFO - Scores saved to top_p/case_scores_top_p_0.8.csv
+2024-11-09 15:09:41,358 - INFO - Loading dataset ahmed275/decoding_summaries_top_p_0.7 from Hugging Face...
+2024-11-09 15:09:55,510 - INFO - DATASET ahmed275/decoding_summaries_top_p_0.7 all scorers.
+2024-11-09 15:09:55,585 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-09 17:17:11,085 - INFO - Scores saved to top_p/case_scores_top_p_0.7.csv
+2024-11-09 17:17:11,085 - INFO - Loading dataset ahmed275/decoding_summaries_top_p_0.6 from Hugging Face...
+2024-11-09 17:17:23,753 - INFO - DATASET ahmed275/decoding_summaries_top_p_0.6 all scorers.
+2024-11-09 17:17:23,831 - INFO - Dataset loaded and converted to DataFrame.
+2024-11-09 19:23:05,876 - INFO - Scores saved to top_p/case_scores_top_p_0.6.csv
+2024-11-09 19:23:05,876 - INFO - Loading dataset ahmed275/decoding_summaries_top_p_0.5 from Hugging Face...
+2024-11-09 19:23:17,531 - INFO - DATASET ahmed275/decoding_summaries_top_p_0.5 all scorers.
+2024-11-09 19:23:17,607 - INFO - Dataset loaded and converted to DataFrame.
