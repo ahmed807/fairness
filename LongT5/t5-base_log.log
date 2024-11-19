@@ -16,3 +16,7 @@
 2024-11-09 20:16:42,698 - INFO - Starting training
 2024-11-09 20:16:42,854 - INFO - 16384
 2024-11-09 20:16:43,853 - INFO - Starting training
+2024-11-10 07:38:42,048 - INFO - Evaluating the model
+2024-11-10 07:38:42,048 - INFO - Evaluating the model
+2024-11-10 07:41:44,873 - INFO - Evaluation results: {'eval_loss': 1.1839946508407593, 'eval_runtime': 182.8238, 'eval_samples_per_second': 2.959, 'eval_steps_per_second': 0.744, 'epoch': 10.0}
+2024-11-10 07:41:44,874 - INFO - Evaluation results: {'eval_loss': 1.1839946508407593, 'eval_runtime': 182.823, 'eval_samples_per_second': 2.959, 'eval_steps_per_second': 0.744, 'epoch': 10.0}
