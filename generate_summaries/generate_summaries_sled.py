@@ -4,9 +4,18 @@ import logging
 import pandas as pd
 import torch
 from datasets import load_dataset, Dataset
-from transformers import AutoTokenizer, LongT5ForConditionalGeneration
 from huggingface_hub import login
 import os
+import json
+from transformers import (
+    AutoTokenizer,
+    AutoModelForSeq2SeqLM,
+    Seq2SeqTrainingArguments,
+    Seq2SeqTrainer,
+    DataCollatorForSeq2Seq
+)
+
+import sled
 # Parse command-line arguments
 # parser = argparse.ArgumentParser(description='Generate summaries using a trained LongT5 model.')
 # parser.add_argument('config_path', type=str, help='Path to the configuration file')
@@ -15,7 +24,7 @@ config_path = os.path.abspath('/home/mostah/workspace/fairness/config.yaml')
 
 # Load configuration
 with open(config_path, 'r') as f:
-    config = yaml.safe_load(f)['generate_summary_longt5_base']
+    config = yaml.safe_load(f)['generate_summary_sled']
 
 # Configure logging
 logging.basicConfig(filename=config['log_file_name'], level=logging.INFO, 
@@ -43,7 +52,7 @@ dataset = load_dataset(config['dataset_name'])
 df = pd.DataFrame(dataset['test'])
 
 # Load the model and tokenizer
-model = LongT5ForConditionalGeneration.from_pretrained(config['model_name']).to(device)
+model = AutoModelForSeq2SeqLM.from_pretrained(config['model_name']).to(device)
 tokenizer = AutoTokenizer.from_pretrained(config['model_name'])
 
 # Function to generate summaries

@@ -1,58 +1,6 @@
 [
     {
-        "dataset_name": "ahmed275/decoding_summaries_temperature_0.8",
-        "csv_filename": "temperature/case_scores_temperature_0.8.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_temperature_0.7",
-        "csv_filename": "temperature/case_scores_temperature_0.7.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_temperature_0.6",
-        "csv_filename": "temperature/case_scores_temperature_0.6.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_temperature_0.5",
-        "csv_filename": "temperature/case_scores_temperature_0.5.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_temperature_0.4",
-        "csv_filename": "temperature/case_scores_temperature_0.4.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_top_p_0.9",
-        "csv_filename": "top_p/case_scores_top_p_0.9.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_top_p_0.8",
-        "csv_filename": "top_p/case_scores_top_p_0.8.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_top_p_0.7",
-        "csv_filename": "top_p/case_scores_top_p_0.7.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_top_p_0.6",
-        "csv_filename": "top_p/case_scores_top_p_0.6.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_top_p_0.5",
-        "csv_filename": "top_p/case_scores_top_p_0.5.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_top_p_0.4",
-        "csv_filename": "top_p/case_scores_top_p_0.4.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_top_p_0.3",
-        "csv_filename": "top_p/case_scores_top_p_0.3.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_top_p_0.2",
-        "csv_filename": "top_p/case_scores_top_p_0.2.csv"
-    },
-    {
-        "dataset_name": "ahmed275/decoding_summaries_top_p_0.1",
-        "csv_filename": "top_p/case_scores_top_p_0.1.csv"
+        "dataset_name": "ahmed275/generated_summaries_LongT5_tglobal_base",
+        "csv_filename": "LongT5_BASE/case_scores_LongT5_tglobal_base.csv"
     }
 ]

@@ -3,9 +3,25 @@ generate_summary:
   log_file_name: generated_summary_log.log
   login_token: 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
   model: LongT5ForConditionalGeneration.from_pretrained('Stancld/longt5-tglobal-large-16384-pubmed-3k_steps')
-  push_dataset_name: ahmed275/generated_summaries_LongT5_tglobal_large
+  push_dataset_name: ahmed275/generated_summaries_LongT5_tglobal_base
   tokenizer: AutoTokenizer.from_pretrained('Stancld/longt5-tglobal-large-16384-pubmed-3k_steps')
   model_name: "google/long-t5-tglobal-large"
+generate_summary_longt5_base:
+  dataset_name: ahmed275/opinions_dataset_temporal
+  log_file_name: generated_summary_log.log
+  login_token: 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
+  model: LongT5ForConditionalGeneration.from_pretrained('google/long-t5-tglobal-base')
+  push_dataset_name: ahmed275/generated_summaries_LongT5_tglobal_base
+  tokenizer: AutoTokenizer.from_pretrained('google/long-t5-tglobal-base')
+  model_name: "google/long-t5-tglobal-base"
+generate_summary_sled:
+  dataset_name: ahmed275/opinions_dataset_temporal
+  log_file_name: generated_summary_log.log
+  login_token: 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
+  model: AutoModelForSeq2SeqLM.from_pretrained('tau/bart-base-sled')
+  push_dataset_name: ahmed275/generated_summaries_sled
+  tokenizer: AutoTokenizer.from_pretrained('tau/bart-base-sled')
+  model_name: "tau/bart-base-sled"
 longT5_large:
   dataset_name: ahmed275/opinions_dataset_temporal
   log_file_name: t5-large_log.log

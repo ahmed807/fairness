@@ -13,6 +13,7 @@ sled
 py-sled
 rouge-score
 bert-score
+faiss-gpu
 # When in a new H100 or any GPU
 ## sudo apt-get install python3-dev
 # align score and UniEval
