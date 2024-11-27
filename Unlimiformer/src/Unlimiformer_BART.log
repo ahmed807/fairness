@@ -1,0 +1,138 @@
+2024-11-26 11:40:26,240 - INFO - Preprocessing 12 examples
+2024-11-26 11:40:40,032 - INFO - Preprocessing 12 examples
+2024-11-26 11:40:54,247 - INFO - Preprocessing 12 examples
+2024-11-26 11:41:10,249 - INFO - Preprocessing 12 examples
+2024-11-26 11:41:26,093 - INFO - Preprocessing 12 examples
+2024-11-26 11:41:30,745 - INFO - Preprocessing 12 examples
+2024-11-26 11:42:20,244 - INFO - Preprocessing 12 examples
+2024-11-26 11:46:40,159 - INFO - Preprocessing 12 examples
+2024-11-26 11:46:50,440 - INFO - Preprocessing 12 examples
+2024-11-26 11:47:01,200 - INFO - Preprocessing 12 examples
+2024-11-26 11:47:13,561 - INFO - Preprocessing 12 examples
+2024-11-26 11:47:26,190 - INFO - Preprocessing 12 examples
+2024-11-26 11:47:29,999 - INFO - Preprocessing 12 examples
+2024-11-26 11:50:06,342 - INFO - Preprocessing 12 examples
+2024-11-26 11:50:20,318 - INFO - Preprocessing 12 examples
+2024-11-26 11:50:34,735 - INFO - Preprocessing 12 examples
+2024-11-26 11:50:50,590 - INFO - Preprocessing 12 examples
+2024-11-26 11:51:06,876 - INFO - Preprocessing 12 examples
+2024-11-26 11:51:11,586 - INFO - Preprocessing 12 examples
+2024-11-26 11:54:09,892 - INFO - Preprocessing 12 examples
+2024-11-26 12:54:42,911 - INFO - Preprocessing 12 examples
+2024-11-26 12:54:54,770 - INFO - Preprocessing 12 examples
+2024-11-26 12:55:07,236 - INFO - Preprocessing 12 examples
+2024-11-26 12:55:21,094 - INFO - Preprocessing 12 examples
+2024-11-26 12:55:35,487 - INFO - Preprocessing 12 examples
+2024-11-26 12:55:39,688 - INFO - Preprocessing 12 examples
+2024-11-26 12:58:04,599 - INFO - Preprocessing 12 examples
+2024-11-26 13:00:35,535 - ERROR - Training error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 13:00:35,539 - ERROR - Evaluation error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 13:08:49,831 - ERROR - Training error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 13:08:49,834 - ERROR - Evaluation error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 13:19:27,814 - ERROR - Training error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 13:19:27,818 - ERROR - Evaluation error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 13:20:21,976 - ERROR - Training error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 13:20:21,980 - ERROR - Evaluation error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 14:29:30,729 - ERROR - Training error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 14:29:30,732 - ERROR - Evaluation error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 14:31:50,667 - ERROR - Training error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 14:31:50,670 - ERROR - Evaluation error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 14:32:16,860 - ERROR - Training error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 14:32:16,863 - ERROR - Evaluation error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 14:32:46,770 - INFO - Preprocessing 12 examples
+2024-11-26 14:32:57,246 - INFO - Preprocessing 12 examples
+2024-11-26 14:33:08,206 - INFO - Preprocessing 12 examples
+2024-11-26 14:33:21,232 - INFO - Preprocessing 12 examples
+2024-11-26 14:33:33,922 - INFO - Preprocessing 12 examples
+2024-11-26 14:33:37,494 - INFO - Preprocessing 12 examples
+2024-11-26 14:33:46,173 - ERROR - Training error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 14:33:46,180 - ERROR - Evaluation error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 17:29:33,492 - INFO - Preprocessing 12 examples
+2024-11-26 17:29:42,635 - ERROR - Training error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-26 17:29:42,641 - ERROR - Evaluation error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-27 15:29:23,538 - INFO - Preprocessing 12 examples
+2024-11-27 15:29:38,481 - INFO - Preprocessing 12 examples
+2024-11-27 15:29:52,327 - INFO - Preprocessing 12 examples
+2024-11-27 15:30:06,947 - INFO - Preprocessing 12 examples
+2024-11-27 15:30:21,938 - INFO - Preprocessing 12 examples
+2024-11-27 15:30:26,286 - INFO - Preprocessing 12 examples
+2024-11-27 15:43:39,863 - ERROR - Training error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-27 15:43:39,867 - ERROR - Evaluation error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+
+
+
+
+
+
+2024-11-27 15:45:26,573 - INFO - Preprocessing 12 examples
+2024-11-27 15:46:42,347 - INFO - Preprocessing 12 examples
+2024-11-27 15:46:47,135 - INFO - Preprocessing 12 examples
+2024-11-27 15:46:51,872 - INFO - Preprocessing 12 examples
+2024-11-27 15:46:57,389 - INFO - Preprocessing 12 examples
+2024-11-27 15:47:02,517 - INFO - Preprocessing 12 examples
+2024-11-27 15:47:04,017 - INFO - Preprocessing 12 examples
+2024-11-27 15:47:10,210 - ERROR - Training error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-27 15:47:10,216 - ERROR - Evaluation error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-27 15:48:42,961 - INFO - Preprocessing 12 examples
+2024-11-27 15:48:48,873 - ERROR - Training error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-27 15:48:48,888 - ERROR - Evaluation error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-27 15:52:10,361 - ERROR - Training error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-27 15:52:10,377 - ERROR - Evaluation error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-27 16:38:09,147 - ERROR - Training error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-11-27 16:38:09,152 - ERROR - Evaluation error occurred: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

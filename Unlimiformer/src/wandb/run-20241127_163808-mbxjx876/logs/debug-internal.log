@@ -1,0 +1,16 @@
+{"time":"2024-11-27T16:38:08.535637368Z","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-27T16:38:08.535651608Z","level":"INFO","msg":"created symlink","path":"/home/mostah/workspace/fairness/Unlimiformer/src/wandb/run-20241127_163808-mbxjx876/logs/debug-core.log"}
+{"time":"2024-11-27T16:38:08.641902476Z","level":"INFO","msg":"created new stream","id":"mbxjx876"}
+{"time":"2024-11-27T16:38:08.641943037Z","level":"INFO","msg":"stream: started","id":"mbxjx876"}
+{"time":"2024-11-27T16:38:08.641979527Z","level":"INFO","msg":"writer: Do: started","stream_id":"mbxjx876"}
+{"time":"2024-11-27T16:38:08.642081597Z","level":"INFO","msg":"sender: started","stream_id":"mbxjx876"}
+{"time":"2024-11-27T16:38:08.642131868Z","level":"INFO","msg":"handler: started","stream_id":"mbxjx876"}
+{"time":"2024-11-27T16:38:08.901631568Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-27T16:38:09.195918401Z","level":"INFO","msg":"stream: closing","id":"mbxjx876"}
+{"time":"2024-11-27T16:38:09.375413537Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-27T16:38:09.376717746Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-27T16:38:10.05079999Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-27T16:38:10.242263637Z","level":"INFO","msg":"handler: closed","stream_id":"mbxjx876"}
+{"time":"2024-11-27T16:38:10.242333998Z","level":"INFO","msg":"sender: closed","stream_id":"mbxjx876"}
+{"time":"2024-11-27T16:38:10.242324947Z","level":"INFO","msg":"writer: Close: closed","stream_id":"mbxjx876"}
+{"time":"2024-11-27T16:38:10.242990842Z","level":"INFO","msg":"stream: closed","id":"mbxjx876"}

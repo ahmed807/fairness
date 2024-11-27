@@ -1,48 +1,18 @@
-from transformers import BartForConditionalGeneration, AutoTokenizer, Trainer, TrainingArguments,DataCollatorWithPadding
-from datasets import load_dataset
 import torch
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, Trainer, TrainingArguments, DataCollatorForSeq2Seq
+from datasets import load_dataset
 from unlimiformer import Unlimiformer
-from usage import UnlimiformerArguments, training_addin
+from usage import UnlimiformerArguments
 import os
+import logging
 
-# 
-# device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-device = torch.device('cpu') 
+# Configure logging
+logging.basicConfig(filename='Unlimiformer_BART.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+# Set device to CPU for debugging
+# device = torch.device('cpu')
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
-
-# Define the preprocessing function
-def preprocess_function(examples, tokenizer, max_length=16384):
-    """Preprocess function with appropriate truncation"""
-    inputs = examples['opinionOfTheCourt']
-    targets = examples['syllabus']
-    
-    model_inputs = tokenizer(
-        inputs,
-        max_length=max_length,
-        padding='max_length',
-        truncation=True,
-        return_tensors="pt"  # Ensure tensors are returned
-    )
-    
-    with tokenizer.as_target_tokenizer():
-        labels = tokenizer(
-            targets,
-            max_length=1024,
-            padding='max_length',
-            truncation=True,
-            return_tensors="pt"  # Ensure tensors are returned
-        )
-
-    # Convert labels to tensor and replace -100 for padding
-    labels['input_ids'] = torch.tensor([
-        [-100 if token == tokenizer.pad_token_id else token for token in label]
-        for label in labels['input_ids']
-    ])
-
-    model_inputs['labels'] = labels['input_ids']
-    
-    # Ensure all model inputs are tensors and move them to the device
-    return {k: v.to(device) for k, v in model_inputs.items()}
 
 # Load the dataset
 dataset = load_dataset("ahmed275/opinions_dataset_temporal")
@@ -50,13 +20,64 @@ dataset = load_dataset("ahmed275/opinions_dataset_temporal")
 # Initialize the tokenizer and model
 modelname = "facebook/bart-base"
 tokenizer = AutoTokenizer.from_pretrained(modelname)
-model = BartForConditionalGeneration.from_pretrained(modelname)
-model.resize_token_embeddings(len(tokenizer))
+model = AutoModelForSeq2SeqLM.from_pretrained(modelname)
+
+
+# tokenizer = LEDTokenizer.from_pretrained('allenai/led-base-16384')
+# model = LEDForConditionalGeneration.from_pretrained('allenai/led-base-16384')
+
+# Set maximum lengths
+MAX_INPUT_LENGTH = 16384  # Adjust based on your GPU memory
+MAX_TARGET_LENGTH = 1024
+
+# Define the preprocessing function
+def preprocess_function(examples):
+    logging.info(f"Preprocessing {len(examples)} examples")
+    inputs = examples['opinionOfTheCourt']
+    targets = examples['syllabus']
+    
+    model_inputs = tokenizer(
+        inputs,
+        max_length=MAX_INPUT_LENGTH,
+        padding='max_length',
+        truncation=True,
+        return_tensors="pt"
+    )
+    
+    with tokenizer.as_target_tokenizer():
+        labels = tokenizer(
+            targets,
+            max_length=MAX_TARGET_LENGTH,
+            padding='max_length',
+            truncation=True,
+            return_tensors="pt"
+        )
+
+    model_inputs['labels'] = labels['input_ids']
+    
+    # Replace padding token id with -100 for loss calculation
+    # model_inputs['labels'] = [
+    #     [-100 if token == tokenizer.pad_token_id else token for token in label]
+    #     for label in model_inputs['labels']
+    # ]
+
+    model_inputs["length"] = [len(x) for x in model_inputs["input_ids"]]
+    return model_inputs
 
 # Preprocess the dataset
-tokenized_datasets = dataset.map(lambda x: preprocess_function(x, tokenizer), batched=True)
-# Use a data collator to handle padding
-data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
+tokenized_train_dataset = dataset['train'].map(
+    preprocess_function,
+    batched=True,
+    remove_columns=dataset['train'].column_names,
+    desc="Running tokenizer on train dataset"
+)
+tokenized_val_dataset = dataset['validation'].map(
+    preprocess_function,
+    batched=True,
+    remove_columns=dataset['validation'].column_names,
+    desc="Running tokenizer on validation dataset"
+)
+model.resize_token_embeddings(len(tokenizer))
 
 # Define Unlimiformer arguments
 defaults = UnlimiformerArguments()
@@ -81,17 +102,26 @@ unlimiformer_kwargs = {
 # Convert the model to use Unlimiformer
 model = Unlimiformer.convert_model(model, **unlimiformer_kwargs)
 model.to(device)
+
+# Use a data collator to handle padding
+data_collator = DataCollatorForSeq2Seq(
+    tokenizer,
+    model=model,
+    padding=True,
+    max_length=MAX_INPUT_LENGTH
+)
+
 # Define training arguments
 training_args = TrainingArguments(
     output_dir='/srv/mostah/unlimiformer_results',
     evaluation_strategy='epoch',
     save_strategy='epoch',
     learning_rate=1e-5,
-    per_device_train_batch_size=2,
+    per_device_train_batch_size=1,  # Reduce batch size for debugging
     per_device_eval_batch_size=1,
     num_train_epochs=3,
     weight_decay=0.01,
-    logging_dir='./logs',
+    logging_dir='/srv/mostah/unlimiformer_results/logs',
     logging_steps=10,
     save_steps=1000,
     eval_steps=1000,
@@ -102,12 +132,25 @@ training_args = TrainingArguments(
 trainer = Trainer(
     model=model,
     args=training_args,
-    train_dataset=tokenized_datasets['train'].select(range(20)),
-    eval_dataset=tokenized_datasets['validation'].select(range(20)),
+    train_dataset=tokenized_train_dataset.select(range(20)),
+    eval_dataset=tokenized_val_dataset.select(range(20)),
+    data_collator=data_collator
 )
 
 # Train the model
-trainer.train()
+try:
+    trainer.train()
+except RuntimeError as e:
+    logging.error(f"Training error occurred: {e}")
+    print("Error details:")
+    import traceback
+    traceback.print_exc()
 
 # Evaluate the model
-trainer.evaluate()
+try:
+    trainer.evaluate()
+except RuntimeError as e:
+    logging.error(f"Evaluation error occurred: {e}")
+    print("Evaluation error details:")
+    import traceback
+    traceback.print_exc()

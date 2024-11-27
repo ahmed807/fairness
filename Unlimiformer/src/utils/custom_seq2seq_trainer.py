@@ -9,7 +9,7 @@ import torch
 from datasets import Dataset
 from torch import nn
 from transformers.debug_utils import DebugOption
-from transformers.deepspeed import is_deepspeed_zero3_enabled
+from transformers.integrations.deepspeed import is_deepspeed_zero3_enabled
 from transformers.trainer_utils import speed_metrics
 
 from transformers.utils import logging

@@ -1,0 +1,16 @@
+{"time":"2024-11-27T15:48:48.233231423Z","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-27T15:48:48.233245713Z","level":"INFO","msg":"created symlink","path":"/home/mostah/workspace/fairness/Unlimiformer/src/wandb/run-20241127_154848-fomivser/logs/debug-core.log"}
+{"time":"2024-11-27T15:48:48.338207432Z","level":"INFO","msg":"created new stream","id":"fomivser"}
+{"time":"2024-11-27T15:48:48.338234322Z","level":"INFO","msg":"stream: started","id":"fomivser"}
+{"time":"2024-11-27T15:48:48.338577345Z","level":"INFO","msg":"sender: started","stream_id":"fomivser"}
+{"time":"2024-11-27T15:48:48.338577655Z","level":"INFO","msg":"writer: Do: started","stream_id":"fomivser"}
+{"time":"2024-11-27T15:48:48.338617455Z","level":"INFO","msg":"handler: started","stream_id":"fomivser"}
+{"time":"2024-11-27T15:48:48.609993823Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-27T15:48:48.909691059Z","level":"INFO","msg":"stream: closing","id":"fomivser"}
+{"time":"2024-11-27T15:48:49.054678605Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-27T15:48:49.055655272Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-27T15:48:49.751358116Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-27T15:48:49.958625547Z","level":"INFO","msg":"handler: closed","stream_id":"fomivser"}
+{"time":"2024-11-27T15:48:49.958674308Z","level":"INFO","msg":"sender: closed","stream_id":"fomivser"}
+{"time":"2024-11-27T15:48:49.958669507Z","level":"INFO","msg":"writer: Close: closed","stream_id":"fomivser"}
+{"time":"2024-11-27T15:48:49.95909265Z","level":"INFO","msg":"stream: closed","id":"fomivser"}

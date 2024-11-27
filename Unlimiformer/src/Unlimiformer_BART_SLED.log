@@ -1,0 +1,11 @@
+2024-11-27 17:16:12,644 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported (tau/bart-base-sled does not appear to have a file named pytorch_model.bin. Checkout 'https://huggingface.co/tau/bart-base-sled/main' for available files.)
+2024-11-27 17:16:12,647 - INFO - Tokenizing datasets
+2024-11-27 17:16:12,667 - INFO - Preprocessing 12 examples
+2024-11-27 17:16:25,999 - INFO - Preprocessing 12 examples
+2024-11-27 17:16:39,219 - INFO - Preprocessing 12 examples
+2024-11-27 17:16:53,682 - INFO - Preprocessing 12 examples
+2024-11-27 17:17:08,399 - INFO - Preprocessing 12 examples
+2024-11-27 17:17:12,815 - INFO - Preprocessing 12 examples
+2024-11-27 17:30:24,756 - INFO - Did not find a SLED weights file to be loaded. If this is not unexpected, please reach out. Note - loading sharded weight file is not currently supported (tau/bart-base-sled does not appear to have a file named pytorch_model.bin. Checkout 'https://huggingface.co/tau/bart-base-sled/main' for available files.)
+2024-11-27 17:30:24,758 - INFO - Tokenizing datasets
+2024-11-27 17:30:24,792 - INFO - Preprocessing 12 examples

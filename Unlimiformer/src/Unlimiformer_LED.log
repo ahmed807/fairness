@@ -1,0 +1,16 @@
+2024-11-27 16:47:41,743 - INFO - Tokenizing datasets
+2024-11-27 16:47:42,474 - INFO - Preprocessing 12 examples
+2024-11-27 16:47:56,590 - INFO - Preprocessing 12 examples
+2024-11-27 16:48:11,436 - INFO - Preprocessing 12 examples
+2024-11-27 16:48:29,526 - INFO - Preprocessing 12 examples
+2024-11-27 16:48:48,844 - INFO - Preprocessing 12 examples
+2024-11-27 16:48:55,653 - INFO - Preprocessing 12 examples
+2024-11-27 16:50:15,529 - INFO - Tokenizing datasets
+2024-11-27 16:50:22,765 - ERROR - Training error occurred: CUDA out of memory. Tried to allocate 768.00 MiB. GPU 0 has a total capacity of 44.46 GiB of which 105.50 MiB is free. Process 1792692 has 16.40 GiB memory in use. Including non-PyTorch memory, this process has 27.94 GiB memory in use. Of the allocated memory 26.42 GiB is allocated by PyTorch, and 1.20 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2024-11-27 16:50:22,769 - INFO - Evaluating the model
+2024-11-27 16:52:14,432 - INFO - Tokenizing datasets
+2024-11-27 16:52:54,609 - INFO - Tokenizing datasets
+2024-11-27 16:53:01,766 - ERROR - Training error occurred: CUDA out of memory. Tried to allocate 768.00 MiB. GPU 0 has a total capacity of 44.46 GiB of which 105.50 MiB is free. Process 1792692 has 16.40 GiB memory in use. Including non-PyTorch memory, this process has 27.94 GiB memory in use. Of the allocated memory 26.42 GiB is allocated by PyTorch, and 1.20 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2024-11-27 16:53:01,769 - INFO - Evaluating the model
+2024-11-27 16:53:14,231 - INFO - Evaluation results: {'eval_loss': 3.0572400093078613, 'eval_runtime': 12.4584, 'eval_samples_per_second': 1.605, 'eval_steps_per_second': 1.605, 'epoch': 0.05}
+2024-11-27 16:54:38,730 - INFO - Tokenizing datasets

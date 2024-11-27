@@ -16,6 +16,8 @@ dependencies:
   - faiss-gpu
   - huggingface_hub
   - pip
+  - wandb
+  - nltk
   - pip:
     - unlimiformer
 # conda env create -f environment.yml

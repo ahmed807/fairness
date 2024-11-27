@@ -1,6 +1,6 @@
 [
     {
-        "dataset_name": "ahmed275/generated_summaries_LongT5_tglobal_base",
-        "csv_filename": "LongT5_BASE/case_scores_LongT5_tglobal_base.csv"
+        "dataset_name": "ahmed275/generated_summaries_sled",
+        "csv_filename": "SLED/case_scores_sled.csv"
     }
 ]

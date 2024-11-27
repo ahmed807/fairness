@@ -1,0 +1,63 @@
+  0%|                                                                                                                                  | 0/60 [00:00<?, ?it/s]/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:2852: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+Error details:
+Traceback (most recent call last):
+  File "/home/mostah/workspace/fairness/Unlimiformer/src/un.py", line 138, in <module>
+    trainer.train()
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/transformers/trainer.py", line 3579, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/transformers/trainer.py", line 3633, in compute_loss
+    outputs = model(**inputs)
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/transformers/models/bart/modeling_bart.py", line 1642, in forward
+    outputs = self.model(
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/transformers/models/bart/modeling_bart.py", line 1510, in forward
+    encoder_outputs = self.encoder(
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/transformers/models/bart/modeling_bart.py", line 1062, in forward
+    embed_pos = self.embed_positions(input)
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/transformers/models/bart/modeling_bart.py", line 116, in forward
+    return super().forward(positions + self.offset)
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/torch/nn/modules/sparse.py", line 190, in forward
+    return F.embedding(
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/torch/nn/functional.py", line 2551, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+Evaluation error details:
+
+Traceback (most recent call last):
+  File "/home/mostah/workspace/fairness/Unlimiformer/src/un.py", line 147, in <module>
+    trainer.evaluate()
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/transformers/trainer.py", line 3975, in evaluate
+    output = eval_loop(
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/transformers/trainer.py", line 4135, in evaluation_loop
+    model.eval()
+  File "/home/mostah/workspace/fairness/Unlimiformer/src/unlimiformer.py", line 102, in pre_eval_hook
+    self.original_model_eval_func()
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 2865, in eval
+    return self.train(False)
+  File "/home/mostah/workspace/fairness/Unlimiformer/src/unlimiformer.py", line 107, in pre_train_hook
+    torch.cuda.empty_cache()
+  File "/home/mostah/anaconda3/envs/unlimiformer/lib/python3.9/site-packages/torch/cuda/memory.py", line 192, in empty_cache
+    torch._C._cuda_emptyCache()
+RuntimeError: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.

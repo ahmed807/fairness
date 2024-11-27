@@ -1,0 +1,16 @@
+{"time":"2024-11-27T16:50:18.346823033Z","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-27T16:50:18.346839933Z","level":"INFO","msg":"created symlink","path":"/home/mostah/workspace/fairness/Unlimiformer/src/wandb/run-20241127_165018-ejjd6liq/logs/debug-core.log"}
+{"time":"2024-11-27T16:50:18.452655849Z","level":"INFO","msg":"created new stream","id":"ejjd6liq"}
+{"time":"2024-11-27T16:50:18.452694079Z","level":"INFO","msg":"stream: started","id":"ejjd6liq"}
+{"time":"2024-11-27T16:50:18.45272422Z","level":"INFO","msg":"writer: Do: started","stream_id":"ejjd6liq"}
+{"time":"2024-11-27T16:50:18.45275944Z","level":"INFO","msg":"handler: started","stream_id":"ejjd6liq"}
+{"time":"2024-11-27T16:50:18.45276936Z","level":"INFO","msg":"sender: started","stream_id":"ejjd6liq"}
+{"time":"2024-11-27T16:50:18.745850804Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-27T16:50:22.85933374Z","level":"INFO","msg":"stream: closing","id":"ejjd6liq"}
+{"time":"2024-11-27T16:50:22.85937555Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-27T16:50:22.860014385Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-27T16:50:25.399105693Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-27T16:50:25.589704763Z","level":"INFO","msg":"handler: closed","stream_id":"ejjd6liq"}
+{"time":"2024-11-27T16:50:25.589769713Z","level":"INFO","msg":"writer: Close: closed","stream_id":"ejjd6liq"}
+{"time":"2024-11-27T16:50:25.589795603Z","level":"INFO","msg":"sender: closed","stream_id":"ejjd6liq"}
+{"time":"2024-11-27T16:50:25.589875754Z","level":"INFO","msg":"stream: closed","id":"ejjd6liq"}
