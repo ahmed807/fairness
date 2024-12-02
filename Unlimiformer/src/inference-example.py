@@ -10,12 +10,12 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # example using govreport
 modelname = "facebook/bart-base"
-dataset = load_dataset("urialon/gov_report_validation")
+dataset = load_dataset("ahmed275/opinions_dataset_temporal")
 
 tokenizer = AutoTokenizer.from_pretrained("facebook/bart-base")
 model = BartForConditionalGeneration.from_pretrained(modelname)
 
-example_input = dataset['validation'][0]['input']
+example_input = dataset['validation'][0]['opinionOfTheCourt']
 
 example = tokenizer(example_input, truncation=False, return_tensors="pt")
 truncated_example = tokenizer(example_input, truncation=True, max_length=1024, return_tensors="pt")

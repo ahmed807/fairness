@@ -6,7 +6,8 @@ from transformers import (
     AutoTokenizer,
      AutoConfig,
     AutoModelForSeq2SeqLM,
-    Seq2SeqTrainingArguments,
+    Seq2SeqTrainingArguments,,
+    TrainingArguments
     Seq2SeqTrainer,
     DataCollatorForSeq2Seq,BartForConditionalGeneration
 )

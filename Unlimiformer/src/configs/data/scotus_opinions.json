@@ -1,12 +1,18 @@
 {
-  "dataset_name": "tau/sled",
-  "dataset_config_name": "gov_report",
+  "dataset_name": "data",
+  "train_file": "opinions_dataset_temporal_train.jsonl",
+  "validation_file": "opinions_dataset_temporal_validation.jsonl",
+  "test_file": "opinions_dataset_temporal_test.jsonl",
   "max_source_length": 16384,
   "generation_max_length": 1024,
+  "input_column": "input",
+  "output_column": "output",
   "max_prefix_length": 0,
   "pad_prefix": false,
   "num_train_epochs": 10,
-  "metric_names": ["rouge"],
+  "metric_names": [
+    "rouge"
+  ],
   "metric_for_best_model": "rouge/geometric_mean",
   "greater_is_better": true
 }

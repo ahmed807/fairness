@@ -38,7 +38,6 @@ def preprocess_function(examples):
     
     model_inputs = tokenizer(
         inputs,
-        max_length=MAX_INPUT_LENGTH,
         padding='max_length',
         truncation=True,
         return_tensors="pt"
@@ -47,7 +46,6 @@ def preprocess_function(examples):
     with tokenizer.as_target_tokenizer():
         labels = tokenizer(
             targets,
-            max_length=MAX_TARGET_LENGTH,
             padding='max_length',
             truncation=True,
             return_tensors="pt"
@@ -56,12 +54,11 @@ def preprocess_function(examples):
     model_inputs['labels'] = labels['input_ids']
     
     # Replace padding token id with -100 for loss calculation
-    # model_inputs['labels'] = [
-    #     [-100 if token == tokenizer.pad_token_id else token for token in label]
-    #     for label in model_inputs['labels']
-    # ]
+    model_inputs['labels'] = [
+        [-100 if token == tokenizer.pad_token_id else token for token in label]
+        for label in model_inputs['labels']
+    ]
 
-    model_inputs["length"] = [len(x) for x in model_inputs["input_ids"]]
     return model_inputs
 
 # Preprocess the dataset
@@ -87,7 +84,7 @@ unlimiformer_kwargs = {
     'unlimiformer_head_num': defaults.unlimiformer_head_num,
     'exclude_attention': defaults.unlimiformer_exclude,
     'chunk_overlap': defaults.unlimiformer_chunk_overlap,
-    'model_encoder_max_len': defaults.unlimiformer_chunk_size,
+    'model_encoder_max_len': 1000,
     'verbose': defaults.unlimiformer_verbose,
     'tokenizer': tokenizer,
     'unlimiformer_training': defaults.unlimiformer_training,
@@ -96,7 +93,7 @@ unlimiformer_kwargs = {
     'test_datastore': defaults.test_datastore,
     'reconstruct_embeddings': defaults.reconstruct_embeddings,
     'gpu_datastore': defaults.gpu_datastore,
-    'gpu_index': defaults.gpu_index
+    'gpu_index': defaults.gpu_index,
 }
 
 # Convert the model to use Unlimiformer
@@ -119,21 +116,22 @@ training_args = TrainingArguments(
     learning_rate=1e-5,
     per_device_train_batch_size=1,  # Reduce batch size for debugging
     per_device_eval_batch_size=1,
-    num_train_epochs=3,
+    num_train_epochs=1,
     weight_decay=0.01,
     logging_dir='/srv/mostah/unlimiformer_results/logs',
     logging_steps=10,
     save_steps=1000,
     eval_steps=1000,
     load_best_model_at_end=True,
+    fp16=True,
 )
 
 # Initialize the Trainer
 trainer = Trainer(
     model=model,
     args=training_args,
-    train_dataset=tokenized_train_dataset.select(range(20)),
-    eval_dataset=tokenized_val_dataset.select(range(20)),
+    train_dataset=tokenized_train_dataset.select(range(5)),
+    eval_dataset=tokenized_val_dataset.select(range(5)),
     data_collator=data_collator
 )
 

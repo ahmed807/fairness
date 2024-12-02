@@ -81,4 +81,4 @@ def process_files(config_file):
 
 # Execute the analysis
 if __name__ == "__main__":
-    results = process_files('all_scores_config copy.json')
+    results = process_files('all_scores_config.json')
