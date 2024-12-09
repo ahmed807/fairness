@@ -23,7 +23,10 @@ def calculate_gd_for_metrics(file_path):
     
     # Calculate GD for each metric
     for metric in df.columns:
-        values = df[metric].values
+        # Convert values to percentage and round to two decimals
+        values = df[metric].values * 100
+        values = np.round(values, 2)
+        
         average = np.mean(values)
         squared_differences = (values - average) ** 2
         sum_squared_differences = np.sum(squared_differences)
@@ -35,17 +38,21 @@ def calculate_gd_for_metrics(file_path):
 def extract_folder_name(file_path):
     # Extract the folder name part after 'average_scores_case_scores_'
     folder_name = os.path.basename(file_path)
-    start = folder_name.find('average_scores_') + len('average_scores_')
+    start = folder_name.find('average_scores_case_scores_') + len('average_scores_case_scores_')
     end = folder_name.find('.csv')
     return folder_name[start:end]
 
 def process_csv_files(directory):
     results = []
+    x= 1
     
     # Get all CSV files
     csv_files = get_all_csv_files(directory)
     
     for file_path in csv_files:
+        if x == 1:
+            print(file_path)
+            x+=1
         gd_values = calculate_gd_for_metrics(file_path)
         folder_name = extract_folder_name(file_path)
         
@@ -58,8 +65,8 @@ def process_csv_files(directory):
     
     # Write the results to a new CSV file
     output_df = pd.DataFrame(results, columns=header)
-    output_df.to_csv('group_disparity_results.csv', index=False)
+    output_df.to_csv('/home/mostah/workspace/fairness/scores/GD_results/group_disparity_results.csv', index=False)
 
 # Specify the directory containing the CSV files
-directory_path = '/home/mostah/workspace/fairness/scores/all'
+directory_path = '/home/mostah/workspace/fairness/scores/average_scores'
 process_csv_files(directory_path)
