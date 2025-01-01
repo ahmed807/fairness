@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read the CSV file into a DataFrame
-df = pd.read_csv('group_disparity_results.csv')
+df = pd.read_csv('new/group_disparity_results.csv')
 
 # Define the categories to split by
 categories = ['partyWinning', 'respondentType', 'issueArea', 'voteDistribution', 'decisionDirection']
